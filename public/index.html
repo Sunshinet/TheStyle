@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="node-modules/systemjs/dist/system.js"></script>
+    <script src="config/system.config.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-storage.js"></script>
+    <script src="config/firebase.config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script src="node-modules/navigo/lib/navigo.min.js"></script>
+    <!--Libraries-->
+    <script src="./node-modules/jquery/dist/jquery.js"></script>
+    <script src="./node-modules/toastr/toastr.js"></script>
+
+    <!--CSS files for some libraries-->
+    <link rel="stylesheet" href="./node-modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node-modules/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="./node-modules/toastr/package/toastr.css">
+    <link rel="stylesheet" href="./node-modules/jquery-ui-dist/jquery-ui.css">
+    <link rel="stylesheet" href="./css/app.css">
+
+    <link rel="shortcut icon" type="image/png" href="./images/1458232566162.png"/>
+
+    <!--Facebook sharing markups-->
+    <!-- <meta property="og:url" content="https://workout-a-day.firebaseapp.com/#/trainings"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Train hard every day!"/>
+    <meta property="og:description" content="Check out our new workouts and became strong and healthy. We are waiting for you :)"/>
+    <meta property="og:image" content="https://i.imgur.com/3kU1X0O.jpg"/> -->
+
+    <title>THE STYLE</title>
+</head>
+
+<body>
+<!--Facebook API-->
+<div id="fb-root"></div>
+<script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<!--End Facebook API-->
+
+ 
+            
+        <header>
+                <img src="./images/logo.png"  class="img-responsive">
+            <nav class="site-navigation">
+
+                <ul class="mainUl">
+                    <li>
+                        <a href="#/">home</a>
+                    </li>
+                    <li>
+                        <a class="rootMenu" href="#/beauty">beauty</a>
+                        <ul class ="submenu">
+                            <li><a href="#/beauty/skin"><span class="bullet">&raquo;&nbsp;</span>skin</a></li>
+                            <li><a href="#/beauty/face"><span class="bullet">&raquo;&nbsp;</span>face</a></li>
+                            <li><a href="#/beauty/hair"><span class="bullet">&raquo;&nbsp;</span>hair</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="rootMenu" href="#/health">health</a>
+                        <ul class="submenu">
+                            <li><a href="#/health/skinnypeople?page=1"><span class="bullet">&raquo;&nbsp;</span>skinny people</a></li>
+                            <li><a href="#/health/badfood?page=1"><span class="bullet">&raquo;&nbsp;</span>bad food</a></li>
+                            <li><a href="#/health/pernikstyle?page=1"><span class="bullet">&raquo;&nbsp;</span>pernik style</a></li>
+                        </ul>
+                    </li>
+                </ul>  
+              </nav>
+            <!-- <div class="search_field" ng-controller="SearchController">
+                <input type="text" name="searchInput" placeholder="Search this website..." ng-model="query" />
+                <button type="submit" class="search-submit"><img src="./img/magnifier.png" alt="Search" ng-click="search(query)"/></button>
+            </div> -->
+
+            
+        </header>
+        <div id="content">
+        </div>
+        <footer class="text-center navbar-fixed-bottom">
+        
+        </footer>
+   
+
+
+<script>
+    System.import("index");
+    firebase.initializeApp(config);
+</script>
+</body>
+
+</html>

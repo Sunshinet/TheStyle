@@ -1,0 +1,73 @@
+@font-face {
+    font-family: LigueGothic;
+    src: url('../fonts/LeagueGothic-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: DroidSans;
+    src: url('../fonts/DroidSans.ttf') format("truetype");
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1c1d1c, #323232 21.4%, #323232 78.6%, #1c1d1c);
+    font-family: DroidSans !important; 
+    position: relative;
+    color: white;
+}
+#logo {
+    background-image: url('https://company-profile-images.s3.amazonaws.com/images/436028/1047488/logo/img-logo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    /* width: 30%;
+    height: 30%;  */
+}
+
+/* HEADER */
+/* header {
+    position: relative;
+} */
+ul {
+   list-style-type: none;
+}
+/* input:focus,
+button:focus {
+    outline: 0;
+} */
+
+/* .site-navigation{
+    padding-bottom: 20px;
+} */
+.mainUl>li{
+    display: inline-block;
+}
+.mainUl>li>a{
+    
+    font-family: LigueGothic !important;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+    text-shadow: 2px 2px black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.rootMenu{
+    display: inline-block;
+}
+.mainUl>li:hover .submenu>li>a{
+   display: block;
+}
+.submenu{
+    position: absolute;
+}
+.submenu>li>a {
+    font-family: LigueGothic;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px black;
+    display: none
+}
+

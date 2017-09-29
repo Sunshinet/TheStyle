@@ -1,0 +1,24 @@
+<div class="main-posts-container">
+  {{#each this}}
+   <div>
+      <div>
+        <img>
+      </div>
+      <div class="mainCategorie">
+          {{mainCategorie}}
+      </div>
+      <div class="post-title"> 
+          <a href="#/{{mainCategorie}}/{{categorie}}/{{id}}">{{title}}</a>
+      </div>
+      <div class="post-author"> 
+        Postet by {{author}} 
+      </div>
+      <div>
+        {{content}}
+      </div>
+      <div>
+        {{id}}
+      </div>
+   </div>
+   {{/each}}
+</div>

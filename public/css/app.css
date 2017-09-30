@@ -51,7 +51,7 @@ ul {
   
 }
 
-.mainUl>li:hover {
+.mainUl>li>a:hover {
     background:#161616;
     padding: 5px 5px 5px 5px;
     border-top-left-radius: 5px;
@@ -102,6 +102,6 @@ ul {
     color: white;
     text-shadow: 2px 2px black;
     /* padding: 0; */
-    /* display: none */
+    display: none
 }
 

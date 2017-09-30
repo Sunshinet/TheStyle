@@ -1,0 +1,22 @@
+{
+    "posts": {
+        "1":{
+            "author": "Nikola Dobrev",
+            "categorie":"skin",
+            "content": "here is the text",
+            "intro":"intro goes here",
+            "id": "1",
+            "mainCategorie":"beauty",
+            "title":"Title goes here"
+        },
+        "2":{
+            "author": "Tanya Dobrev",
+            "categorie":"skin",
+            "content": "here is the text",
+            "intro":"intro goes here",
+            "id": "2",
+            "mainCategorie":"beauty",
+            "title":"Title goes here"
+        }
+    }
+}

@@ -10,7 +10,7 @@ router
     .on(() => homeController())
     .on({
         '/#/': () => homeController(),
-        '/beauty/:mainCategorie': (params) => categoriesController(params),
+        '/beauty/:categorie': (params) => categoriesController(params),
         '/beauty/:mainCategorie/:id': (params) => singlePostController(params),
       
     })

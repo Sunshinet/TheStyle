@@ -1,11 +1,14 @@
 import {templates} from 'templates';
 const categoriesController = function(params){
-    let main = params.mainCategorie
+    let main = params.mainCategorie;
+    let categorie = params.categorie;
+    console.log(categorie)
      let dbRef = firebase.database().ref('posts');
         dbRef.once('value', (snap) => {
-            let f =[]
+            let f = []
+            // console.log(f)
               snap.forEach(element => {
-                if(element.val().categorie === main){
+                if(element.val().categorie === categorie){
                    let dbElements = {
                     'author' : element.val().author,
                     'content' : element.val().content,
@@ -18,6 +21,7 @@ const categoriesController = function(params){
             }
               })
               console.log(f);
+             
              templates.getPage('categories', f);
           })
     // console.log(dbRef);

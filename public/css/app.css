@@ -8,6 +8,7 @@
     src: url('../fonts/DroidSans.ttf') format("truetype");
 }
 body {
+    width: 1650px;
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #1c1d1c, #323232 21.4%, #323232 78.6%, #1c1d1c);
@@ -16,42 +17,56 @@ body {
     color: white;
 }
 #logo {
-    background-image: url('https://company-profile-images.s3.amazonaws.com/images/436028/1047488/logo/img-logo.jpg');
+    background-image: url('../images/logo.png');
     background-repeat: no-repeat;
     background-size: 100%;
     display: inline-block;
-    /* width: 30%;
-    height: 30%;  */
+     width: 359px;
+    height: 55px; 
+    padding: 50px;
 }
 
 /* HEADER */
-/* header {
-    position: relative;
-} */
+header {
+  padding-top: 102px;
+   padding-left: 53px;
+}
+.img-responsive{
+    width: 359px;
+}
+nav{
+    margin-top: 10px;
+}
 ul {
    list-style-type: none;
 }
-/* input:focus,
-button:focus {
-    outline: 0;
-} */
 
-/* .site-navigation{
-    padding-bottom: 20px;
-} */
+.mainUl {
+    padding-left: 0;
+   
+}
 .mainUl>li{
     display: inline-block;
+    margin-left: 20px;
+  
+}
+
+.mainUl>li:hover {
+    background:#161616;
+    padding: 5px 5px 5px 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .mainUl>li>a{
-    
+   
+    /* border-radius: 3px;  */
     font-family: LigueGothic !important;
     font-size: 22px;
     text-transform: uppercase;
     color: white;
     display: inline-block;
     text-shadow: 2px 2px black;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+   
 }
 .rootMenu{
     display: inline-block;
@@ -59,15 +74,34 @@ button:focus {
 .mainUl>li:hover .submenu>li>a{
    display: block;
 }
+.submenu>li>a:hover{
+    color: #dcc08e;
+    text-decoration: none;
+}
+.submenu>li>a:hover .bullet{
+    color: #901c0d;
+    
+}
+/* .submenu>li:hover .submenu>li{
+    color: yellow;
+} */
 .submenu{
     position: absolute;
+    padding: 0;
+    padding-left: 10px;
+    background:#161616;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
+
 .submenu>li>a {
     font-family: LigueGothic;
+
     font-size: 22px;
     text-transform: uppercase;
     color: white;
     text-shadow: 2px 2px black;
-    display: none
+    /* padding: 0; */
+    /* display: none */
 }
 

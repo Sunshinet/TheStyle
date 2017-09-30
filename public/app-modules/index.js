@@ -9,7 +9,7 @@ const router = new Navigo(null, false, '#!');
 router
     .on(() => homeController())
     .on({
-        '/home': () => homeController(),
+        '/#/': () => homeController(),
         '/beauty/:mainCategorie': (params) => categoriesController(params),
         '/beauty/:mainCategorie/:id': (params) => singlePostController(params),
       

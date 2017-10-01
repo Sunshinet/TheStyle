@@ -1,6 +1,5 @@
 
 <div class="index-page-content-container">
-    <p class="post-location"><a href="#">Home</a></p>
     <div id="main-content">
       {{#each this}}
         <div class="post">
@@ -8,16 +7,19 @@
                 <img class="post-image" src="http://html.com/wp-content/uploads/very-large-flamingo.jpg" alt="picture">
             </div> --}}
             <div class="post-image-content">
-                <div class="post-category">
-                   {{mainCategorie}}
-                </div>
-                <div class="post-date">
-                    JAN
-                </div>
-                <div class="post-date">
-                   24
-                </div>
+               
             </div>
+            <div>
+                    <div class="post-category">
+                    {{mainCategorie}}
+                    </div>
+                    <div class="post-date">
+                        JAN
+                    </div>
+                    <div class="post-date">
+                    24
+                    </div>
+                </div> 
             <a href="#/{{mainCategorie}}/{{categorie}}/{{id}}">
                 <h5 class="post-title">
                   {{title}}

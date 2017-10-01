@@ -1,27 +1,29 @@
-<div class="index-page-content-container container">
-    <p class="post-location"><a href="#">Home</a><a>{{categorie}}</a></p>
-   
+
+<div class="index-page-content-container">
     <div id="main-content">
       {{#each this}}
         <div class="post">
-            <div class="post-home-image">
-                <img class="post-image" src="" alt="picture">
-            </div>
+            {{!-- <div class="post-home-image">
+                <img class="post-image" src="http://html.com/wp-content/uploads/very-large-flamingo.jpg" alt="picture">
+            </div> --}}
             <div class="post-image-content">
-                <p class="post-category">
-                   {{mainCategorie}}
-                </p>
-                <p class="post-date">
-                    JAN
-                </p>
-                <p class="post-date">
-                   24
-                </p>
+               
             </div>
+            <div>
+                    <div class="post-category">
+                    {{mainCategorie}}
+                    </div>
+                    <div class="post-date">
+                        JAN
+                    </div>
+                    <div class="post-date">
+                    24
+                    </div>
+                </div> 
             <a href="#/{{mainCategorie}}/{{categorie}}/{{id}}">
-                <p class="post-title">
+                <h5 class="post-title">
                   {{title}}
-                </p>
+                </h5>
             </a>
             <p class="post-author">
                 posted by {{author}}

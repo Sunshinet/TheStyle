@@ -159,6 +159,14 @@ ul {
     text-shadow: 0 0 5px #3a3a3a;
    
 }
+.post-summary{
+    margin: 0 13px 25px 13px;
+    color: #7b7b7b;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 201px;
+    height: 98px;
+}
 
 
 

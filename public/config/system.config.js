@@ -26,7 +26,8 @@ SystemJS.config({
        
         //UI stuffs (autocomplete, calendar etc.)
         "jqueryUi": "../node-modules/jquery-ui-dist/jquery-ui.js",
-        "bootstrap": "node-modules/bootstrap/dist/js/bootstrap.min.js"
+        "bootstrap": "node-modules/bootstrap/dist/js/bootstrap.min.js",
+        "pagination":"../node_modules/paginationjs/dist/pagination.js"
     }
 });
 

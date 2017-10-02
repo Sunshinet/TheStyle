@@ -1,1 +1,37 @@
-<div>hehehheeh</div>
+<main>
+    {{#this}}
+    <article>
+        <div class="post-content">
+            <div class="post-full-content-right">
+                    <h4 class="post-title">{{title}}</h4>
+                    <p class="post-author">POSTED BY {{author}} IN {{categorie}}</p>
+                    <p class="full-text">{{content}}</p>
+            </div>
+            <div class="post-full-content-left">
+                  <div class="image-date">
+                      <p class="post-categorie-left">{{categorie}}</p>
+                    </div>
+                    <p>TAGS</p> 
+                        <ul>
+                            <li>
+                                tag
+                            </li>
+                             <li>
+                                tag
+                            </li>
+                             <li>
+                                tag
+                            </li>
+                        </ul> 
+                    <p>RELATED POST</p>
+                    <ul>
+                        <li>tova</li>
+                        <li>vtoro</li>
+                        <li>treto</li>
+                    </ul>
+                    <p>SHARE THIS</p>
+            </div>
+        </div>
+    </article>
+    {{/this}}
+</main>

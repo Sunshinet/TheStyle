@@ -5,6 +5,8 @@ const categoriesController = function(params){
     console.log(categorie)
      let dbRef = firebase.database().ref('posts');
         dbRef.once('value', (snap) => {
+          let arr = []
+          let cat = [{"categorie":categorie}]
             let f = []
             // console.log(f)
               snap.forEach(element => {
@@ -17,12 +19,15 @@ const categoriesController = function(params){
                     'mainCategorie': element.val().mainCategorie,
                     'id': element.val().id
                   };
-                f.push(dbElements);
+                // f.push();
+               
+                arr.push(dbElements)
             }
               })
-              console.log(f);
+              arr.push(cat);
+              console.log(arr);
              
-             templates.getPage('categories', f);
+              templates.getPage('categories', arr);
           })
     // console.log(dbRef);
     // templates.getPage('some')

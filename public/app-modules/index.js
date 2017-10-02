@@ -7,9 +7,10 @@ import { singlePostController  } from 'singlePostController ';
 const router = new Navigo(null, false, '#!');
 
 router
-    .on(() => homeController())
+    .on(() => homeController.all())
     .on({
-        '/#/': () => homeController(),
+        '/#/': () => homeController.all(),
+        // '/#/?:pageNumber': () => homeController.getPage(),
         '/beauty/:categorie': (params) => categoriesController(params),
         '/beauty/:mainCategorie/:id': (params) => singlePostController(params),
       

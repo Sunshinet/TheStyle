@@ -16,7 +16,8 @@ const singlePostController = function(params){
                 'title': element.val().title,
                 'categorie': element.val().categorie,
                 'mainCategorie': element.val().mainCategorie,
-                'id': element.val().id
+                'id': element.val().id,
+                'comments': element.val().comments
               };
             f.push(dbElements);
         }

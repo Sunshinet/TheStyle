@@ -235,6 +235,7 @@ ul {
 article{
    
     display: inline-block;
+    width: 72%;
 }
 
 .post-content {
@@ -244,15 +245,57 @@ article{
     margin-bottom: 16px;
     box-shadow: 3px 3px 3px black;
     color:black;
-    width: 1200px;
 }
 
 .post-full-content-right{
-    float:right;;
+   
     
     width: 853px;
    
 }
 .post-full-content-left{
     width: 196px;
+    float: left;
 }
+.full-text{
+    color: #7b7b7b;
+}
+.post-title{
+    font-family: LigueGothic;
+    text-transform: uppercase;
+    color: #9a1d0d;
+}
+.post-author{
+    font-family: LigueGothic;
+    text-transform: uppercase;
+}
+.separator{
+    border: none;
+    border-top: 1px dotted #cbcbcb;
+    margin: 5px 0;
+}
+input#authorName{
+    display: block;
+}
+input#avatar{
+    display: block;
+}
+.post-comments{
+    background-color: white;
+    position: relative;
+    padding: 10px 0;
+    box-shadow: 3px 3px 3px black;
+}
+
+/* @media only screen and (max-width:768px) {
+    .post-content {
+        position: relative;
+        background-color: #B11919;
+        /* padding: 35px 31px; */
+        margin-bottom: 16px;
+        box-shadow: 3px 3px 3px black;
+        color:black;
+        width: 90%;
+        margin-left: 5%;
+    }
+} */

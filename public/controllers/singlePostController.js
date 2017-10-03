@@ -29,7 +29,17 @@ const singlePostController = function(params){
          console.log(f);
           templates.getPage('singlePost', f).then(()=>{
             let submitBtn = $('button').click(function(){
-              console.log('hihi');
+              let name = $('#authorName').val();
+              let commentText = $('#text').val();
+              let newPost = {
+                'name':name,
+                'commentText': commentText
+              }
+         let newPostComment = firebase.database().ref('posts').child(b + '/comments').push().key;
+              // console.log(newPostComment);
+              let updates={};
+              updates['/posts/' + b + '/' + 'comments/'+ newPostComment] = newPost;
+              return firebase.database().ref().update(updates);
             })
          
           });

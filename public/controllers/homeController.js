@@ -1,6 +1,6 @@
 import {templates} from 'templates';
 import 'bootstrap';
-import 'pagination';
+
 
   function all(){
      let dbRef = firebase.database().ref('posts').orderByKey();
@@ -19,7 +19,6 @@ import 'pagination';
                 };
               f.push(dbElements);
             })
-            console.log(f)
              templates.getPage('home', f);
         })
   }

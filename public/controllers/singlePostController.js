@@ -25,16 +25,16 @@ const singlePostController = function(params){
             f.push(dbElements);
         }
           })
-         
-         console.log(f);
           templates.getPage('singlePost', f).then(()=>{
             let submitBtn = $('button').click(function(){
               let name = $('#authorName').val();
               let commentText = $('#text').val();
+              if(name !== undefined && commentText !== undefined){
               let newPost = {
                 'name':name,
                 'commentText': commentText
               }
+            }
          let newPostComment = firebase.database().ref('posts').child(b + '/comments').push().key;
               // console.log(newPostComment);
               let updates={};

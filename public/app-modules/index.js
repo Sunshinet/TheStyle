@@ -13,6 +13,8 @@ router
         // '/#/?:pageNumber': () => homeController.getPage(),
         '/beauty/:categorie': (params) => categoriesController(params),
         '/beauty/:mainCategorie/:id': (params) => singlePostController(params),
+        '/health/:categorie': (params) => categoriesController(params),
+        '/health/:mainCategorie/:id': (params) => singlePostController(params),
       
     })
     .notFound(() => templates.getPage('notFound', {}))

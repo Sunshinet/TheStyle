@@ -32,31 +32,36 @@
         </div>
         
         <div class="post-comments">
-            <h1 class="post-title">Comments</h1>
-            <div class="comment">
-        {{#if comments}}
-        {{#each comments}}
-         <div class="comment-author">
-            {{name}}
-        </div>
-        <div class="comments-text">
-            {{commentText}}
-        </div>
-        {{/each}}
-        {{else}}
-        <div>No Comments</div>
-        {{/if}}
-        </div>
-            <div class="comments-content">
-                <form name="postCommentForm" class="comment-form" accept-charset="utf-8">
-                    <input type="text"   id="authorName" placeholder="Your name">
-                    <input type="url"   id="avatar" placeholder="Avatar URL">
-                    <textarea id="text" rows="10"></textarea>
-                    <div class="reply-btn-container">
-                        <button class="submit" type="button">submit</button>
+            <div class="comments">
+              <h1 class="post-title">Comments</h1>
+              <div class="comment">
+                {{#if comments}}
+                {{#each comments}}
+               <div class="single-comment">
+                    <hr class="separator">
+                   <div class="comment-author">
+                        {{name}}
+                   </div>
+                    <div class="comments-text">
+                        {{commentText}}
                     </div>
-                </form>
-             </div>
+                </div>
+                {{/each}}
+                {{else}}
+                <div class="comment-author">No Comments</div>
+                {{/if}}
+                </div>
+                <div class="comments-content">
+                    <form name="postCommentForm" class="comment-form" accept-charset="utf-8">
+                        <input type="text"  id="authorName" placeholder="Your name" required="required">
+                        <input type="url"   id="avatar" placeholder="Avatar URL" required="required">
+                        <textarea id="text" rows="10" required="required"></textarea>
+                        <div class="reply-btn-container">
+                            <button class="submit" type="button">submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </article>
     {{/this}}

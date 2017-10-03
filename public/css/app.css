@@ -164,7 +164,6 @@ ul {
     color: #7b7b7b;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 201px;
     height: 98px;
 }
 
@@ -275,23 +274,43 @@ article{
 }
 input#authorName{
     display: block;
+    color: black;
 }
 input#avatar{
     display: block;
+    color: black;
+}
+textarea{
+    color: black;
 }
 .post-comments{
     background-color: white;
     position: relative;
     padding: 10px 0;
     box-shadow: 3px 3px 3px black;
+    margin-left: 20%;
 }
 
  .comment{
      color:black;
+     width: 100%;
+     margin: 28px 0;
+ }
+ .comments{
+     margin-left: 3%;
+     margin-right: 3%;
  }
  .comment-author{
     font-family: LigueGothic;
     text-transform: uppercase;
+    font-size: 21px;
+    margin-top: 2%;
+ }
+ 
+ .comments-text{
+    font-size: 12px;
+    line-height: 16px;
+    color: #7b7b7b;
  }
  .title-comments{
     font-family: LigueGothic;

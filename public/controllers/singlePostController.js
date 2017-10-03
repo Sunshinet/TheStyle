@@ -29,12 +29,12 @@ const singlePostController = function(params){
             let submitBtn = $('button').click(function(){
               let name = $('#authorName').val();
               let commentText = $('#text').val();
-              if(name !== undefined && commentText !== undefined){
+            //  TODO validation
               let newPost = {
                 'name':name,
                 'commentText': commentText
               }
-            }
+              
          let newPostComment = firebase.database().ref('posts').child(b + '/comments').push().key;
               // console.log(newPostComment);
               let updates={};

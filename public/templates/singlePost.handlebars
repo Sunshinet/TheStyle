@@ -8,15 +8,11 @@
                     </div>
                     <p>TAGS</p> 
                         <ul>
+                            {{#each tags}}
                             <li>
-                                tag
+                                {{this}}
                             </li>
-                             <li>
-                                tag
-                            </li>
-                             <li>
-                                tag
-                            </li>
+                           {{/each}}
                         </ul> 
                     <p>RELATED POST</p>
                     <ul>
@@ -27,33 +23,37 @@
                     <p>SHARE THIS</p>
             </div>
             <div class="post-full-content-right">
-                    <h4 class="post-title">{{title}}</h4>
-                    <p class="post-author">POSTED BY {{author}} IN {{categorie}} categorie</p>
+                    <h1 class="post-title">{{title}}</h1>
+                    <h4 class="post-author">POSTED BY {{author}} IN {{categorie}} categorie</h4>
                     <hr class="separator">
                     <p class="full-text">{{content}}</p>
             </div>
           
         </div>
+        
+        <div class="post-comments">
+            <h1 class="post-title">Comments</h1>
+            <div class="comment">
         {{#if comments}}
         {{#each comments}}
-         <div>
+         <div class="comment-author">
             {{name}}
         </div>
-        <div>
+        <div class="comments-text">
             {{commentText}}
         </div>
         {{/each}}
         {{else}}
         <div>No Comments</div>
         {{/if}}
-        <div class="post-comments">
+        </div>
             <div class="comments-content">
                 <form name="postCommentForm" class="comment-form" accept-charset="utf-8">
-                    <input type="text"  required="required" id="authorName" placeholder="Your name">
-                    <input type="url"  required="required" id="avatar" placeholder="Avatar URL">
-                    <textarea required="required" id="text" rows="10"></textarea>
+                    <input type="text"   id="authorName" placeholder="Your name">
+                    <input type="url"   id="avatar" placeholder="Avatar URL">
+                    <textarea id="text" rows="10"></textarea>
                     <div class="reply-btn-container">
-                        <button class="reply-btn" >submit</button>
+                        <button class="submit" type="button">submit</button>
                     </div>
                 </form>
              </div>

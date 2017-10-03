@@ -14,7 +14,8 @@ import 'pagination';
                   'categorie': element.val().categorie,
                   'mainCategorie': element.val().mainCategorie,
                   'id': element.val().id,
-                  'comments': element.val().comments
+                  'comments': element.val().comments,
+                  'tags': element.val().tags
                 };
               f.push(dbElements);
             })

@@ -248,17 +248,15 @@ article{
 }
 
 .post-full-content-right{
-   
-    
-    width: 853px;
-   
+    width: 97%;
 }
 .post-full-content-left{
-    width: 196px;
+    width: 20%;
     float: left;
 }
 .full-text{
     color: #7b7b7b;
+    width: 100%;
 }
 .post-title{
     font-family: LigueGothic;
@@ -268,6 +266,7 @@ article{
 .post-author{
     font-family: LigueGothic;
     text-transform: uppercase;
+   
 }
 .separator{
     border: none;
@@ -287,15 +286,15 @@ input#avatar{
     box-shadow: 3px 3px 3px black;
 }
 
-/* @media only screen and (max-width:768px) {
-    .post-content {
-        position: relative;
-        background-color: #B11919;
-        /* padding: 35px 31px; */
-        margin-bottom: 16px;
-        box-shadow: 3px 3px 3px black;
-        color:black;
-        width: 90%;
-        margin-left: 5%;
-    }
-} */
+ .comment{
+     color:black;
+ }
+ .comment-author{
+    font-family: LigueGothic;
+    text-transform: uppercase;
+ }
+ .title-comments{
+    font-family: LigueGothic;
+    text-transform: uppercase;
+    color: #9a1d0d;
+ }

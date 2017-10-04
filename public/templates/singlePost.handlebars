@@ -6,21 +6,36 @@
                   <div class="image-date">
                       <p class="post-categorie-left">{{categorie}}</p>
                     </div>
-                    <p>TAGS</p> 
-                        <ul>
-                            {{#each tags}}
-                            <li>
-                                {{this}}
-                            </li>
-                           {{/each}}
-                        </ul> 
-                    <p>RELATED POST</p>
+                    <div class="tags">
+                        <h4 class="post-aside-atributes">TAGS</h4> 
+                            <ul>
+                                {{#each tags}}
+                                <li class="tag-li">
+                                  {{this}}
+                                </li>
+                                {{/each}}
+                            </ul> 
+                    </div>
+                    <div class="related-post-share-this">
+                    <h4 class="post-aside-atributes">RELATED POST</h4>
                     <ul>
                         <li>tova</li>
                         <li>vtoro</li>
                         <li>treto</li>
                     </ul>
-                    <p>SHARE THIS</p>
+                    </div>
+                    <div class="related-post-share-this">
+                        <div class="social-madeia">
+                            <h4 class="post-aside-atributes">SHARE THIS</4>
+                            <div class="share-phone">
+                                    <a href="#"><img src="../images/twetterLogo.png" alt="twetter"></a>
+                                    <a href="#"><img src="../images/facebookLogo.png" alt="facebook"></a>
+                                    <a href="#"><img src="../images/thirdLogo.png" alt="dontknow"></a>
+                                    <a href="#"><img src="../images/diggLogo.png" alt="digg"></a>
+                                    <a href="#"><img src="../images/fifthLogo.png" alt="what"></a>
+                            </div>
+                      </div>
+                    </div>
             </div>
             <div class="post-full-content-right">
                     <h1 class="post-title">{{title}}</h1>
@@ -54,7 +69,7 @@
                 <div class="comments-content">
                     <form name="postCommentForm" class="comment-form" accept-charset="utf-8">
                         <input type="text"  id="authorName" placeholder="Your name" required="required">
-                        <input type="url"   id="avatar" placeholder="Avatar URL" required="required">
+                        <input type="url"   id="avatar" placeholder="Avatar URL" >
                         <textarea id="text" rows="10" required="required"></textarea>
                         <div class="reply-btn-container">
                             <button class="submit" type="button">submit</button>

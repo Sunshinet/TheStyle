@@ -1,17 +1,16 @@
-
 <div class="index-page-content-container">
-    <div id="main-content">   
+      
+    <p>{{categorie}}</p>
+    <div id="main-content">
       {{#each this}}
         <div class="post">
             {{!-- <div class="post-home-image">
                 <img class="post-image" src="http://html.com/wp-content/uploads/very-large-flamingo.jpg" alt="picture">
             </div> --}}
             <div class="post-image-content">
-               
-            </div>
-            <div>
+                <div class="category-and-date">
                     <div class="post-category">
-                    {{mainCategorie}}
+                    {{mainCategorie}}{{id}}
                     </div>
                     <div class="post-date">
                         JAN
@@ -19,11 +18,13 @@
                     <div class="post-date">
                     24
                     </div>
-                </div> 
+                </div>
+            </div>
+            
             <a href="#/{{mainCategorie}}/{{categorie}}/{{id}}">
-                <h5 class="post-title">
+                <h2 class="post-title">
                   {{title}}
-                </h5>
+                </h2>
             </a>
             <p class="post-author">
                 posted by {{author}}
@@ -37,14 +38,14 @@
         </div>
         {{/each}}
     </div>
-    {{!-- <div class="pagination-container">
-        <p class="pagination_go_left"><a href="#/?page={{vm.previousPage}}">&laquo;</a></p>
+    <div class="pagination-container">
+        <p class="pagination_go_left"><a href="#">&laquo;</a></p>
         <p class="pagination">
             <span ng-repeat="page in vm.pages">
-                <a href="#/?page={{page.num}}" class="{{page.selected}}">{{page.num}}</a>
+                <a href="#/" >1</a>
             </span>
         </p>
-        <p class="pagination_go_right"><a href="#/?page={{vm.nextPage}}">&raquo;</a></p>
-    </div> --}}
+        <p class="pagination_go_right"><a href="#">&raquo;</a></p>
+    </div>
 </div>
 

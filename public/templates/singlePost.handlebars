@@ -1,13 +1,23 @@
 <main>
     {{#this}}
-     <p ><a href="#/">Home</a> &raquo; <a href="#/{{mainCategorie}}/{{categorie}}">{{categorie}}</a> &raquo; {{title}}</p>
+     <div class="post-location"><a  href="#/">Home</a> &raquo; <a href="#/{{mainCategorie}}/{{categorie}}">{{categorie}}</a> &raquo; {{title}}</div>
     <article>
         <div class="post-content">
               <div class="post-full-content-left">
-                  <div class="image-date">
-                      <p class="post-categorie-left">{{categorie}}</p>
+                <div class="post-image-content">
+                    <div class="category-and-date">
+                        <div class="post-category">
+                        {{mainCategorie}}{{id}}
+                        </div>
+                        <div class="post-date">
+                            JAN
+                        </div>
+                        <div class="post-date">
+                        24
+                        </div>
                     </div>
-                    <div class="tags">
+                 </div>
+                 <div class="tags">
                         <h4 class="post-aside-atributes">TAGS</h4> 
                             <ul>
                                 {{#each tags}}
@@ -16,10 +26,10 @@
                                 </li>
                                 {{/each}}
                             </ul> 
-                    </div>
-                    <div class="related-post-share-this">
-                    <h4 class="post-aside-atributes">RELATED POST</h4>
-                    <ul>
+                </div>
+                <div class="related-post-share-this">
+                <h4 class="post-aside-atributes">RELATED POST</h4>
+                     <ul>
                         <li>tova</li>
                         <li>vtoro</li>
                         <li>treto</li>
@@ -49,7 +59,9 @@
         
         <div class="post-comments">
             <div class="comments">
-              <h1 class="post-title">Comments</h1>
+              {{#if comments}}
+               <h1 class="post-title">{{comments.keys.length}}Comments</h1>
+              {{/if}}
               <div class="comment">
                 {{#if comments}}
                 {{#each comments}}

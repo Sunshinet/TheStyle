@@ -6,7 +6,6 @@ const categoriesController = function(params){
      let dbRef = firebase.database().ref('posts');
         dbRef.once('value', (snap) => {
             let f = []
-            // console.log(f)
               snap.forEach(element => {
                 if(element.val().categorie === categorie){
                    let dbElements = {
@@ -17,19 +16,18 @@ const categoriesController = function(params){
                     'mainCategorie': element.val().mainCategorie,
                     'id': element.val().id
                   };
-                // f.push();
+                  if(dbElements.title.length > 20){
+                    dbElements.size = 'big';
+                  }
                 
-                f.push(dbElements)
+                f.push(dbElements);
+                
             }
               })
-             
-              var timestamp = new Date();
-              console.log(timestamp);
+            
+              console.log(f);
               templates.getPage('categories', f);
           })
-    // console.log(dbRef);
-    // templates.getPage('some')
-    // console.log('stava');
 }
 
 export { categoriesController }

@@ -17,6 +17,10 @@ import 'bootstrap';
                   'comments': element.val().comments,
                   'tags': element.val().tags
                 };
+                if(dbElements.title.length > 20){
+                  dbElements.size = 'big';
+                }
+                console.log(dbElements);
               f.push(dbElements);
             })
              templates.getPage('home', f);

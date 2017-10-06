@@ -1,9 +1,11 @@
 <div class="index-page-content-container">
       
-    <p>{{categorie}}</p>
+      {{!-- <div class="post-location">{{this.1.categorie}}</div> --}}
+      <div class="post-location"><a  href="#/">Home</a> &raquo; <a href="#/{{this.0.mainCategorie}}/{{this.0.categorie}}">{{this.0.categorie}}</a>
     <div id="main-content">
-      {{#each this}}
-        <div class="post">
+       {{#each this}}
+      {{#if this.size}}
+      <div class="big">
             {{!-- <div class="post-home-image">
                 <img class="post-image" src="http://html.com/wp-content/uploads/very-large-flamingo.jpg" alt="picture">
             </div> --}}
@@ -36,7 +38,45 @@
             <div class="post-bottom">
             </div>
         </div>
+        
+        {{else}}
+         <div class="post">
+            {{!-- <div class="post-home-image">
+                <img class="post-image" src="http://html.com/wp-content/uploads/very-large-flamingo.jpg" alt="picture">
+            </div> --}}
+            <div class="post-image-content">
+                <div class="category-and-date">
+                    <div class="post-category">
+                    {{mainCategorie}}{{id}}
+                    </div>
+                    <div class="post-date">
+                        JAN
+                    </div>
+                    <div class="post-date">
+                    24
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#/{{mainCategorie}}/{{categorie}}/{{id}}">
+                <h2 class="post-title">
+                  {{title}}
+                </h2>
+            </a>
+            <p class="post-author">
+                posted by {{author}}
+            </p>
+            <hr class="post-separator" />
+            <p class="post-summary">
+                {{content}}
+            </p>
+            <div class="post-bottom">
+            </div>
+        </div>
+        {{/if}}
+        
         {{/each}}
+        
     </div>
     <div class="pagination-container">
         <p class="pagination_go_left"><a href="#">&laquo;</a></p>

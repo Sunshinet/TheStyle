@@ -16,6 +16,16 @@
     background-size: 100%;
     display: inline-block;
 } */
+.big{
+    width: 430px;
+    color: black;
+    background-color: white;
+    display: inline-block;
+    box-shadow: 3px 3px 3px black;
+    position: relative;
+    margin-bottom: 25px;
+    margin-right: 25px;
+}
 body {
     margin: 0;
     padding: 0;
@@ -124,6 +134,11 @@ a{
 }
 
 /* SINGLE POST */
+.post-location,
+.post-location>a{
+    color: #8e8e8e;
+    font-size: 12px;
+}
 .index-page-content-container{
     margin-left: 77px;
 }
@@ -133,7 +148,7 @@ a{
     display: inline-block;
     box-shadow: 3px 3px 3px black;
     position: relative;
-    width: 14%;
+    width: 200px;
     margin-bottom: 25px;
     margin-right: 25px;
 
@@ -342,6 +357,7 @@ textarea{
     padding: 10px 0;
     box-shadow: 3px 3px 3px black;
     margin-left: 20%;
+    clear:left;
 }
 
  .comment{
@@ -388,7 +404,7 @@ textarea{
  .post-aside-atributes{
     font-family: LigueGothic;
     text-transform: uppercase;
-    margin: 28px 0 10px;
+    /* margin: 28px 0 10px; */
     font-size: 21px;
  }
 

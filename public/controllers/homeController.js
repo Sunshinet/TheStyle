@@ -1,41 +1,37 @@
-import {templates} from 'templates';
+import { templates } from 'templates';
 import 'bootstrap';
 
 
-  function all(){
+  function all() {
      let dbRef = firebase.database().ref('posts').orderByKey();
         dbRef.once('value', (snap) => {
-          let f =[]
+          const f =[];
             snap.forEach(element => {
                  let dbElements = {
-                  'author' : element.val().author,
-                  'content' : element.val().content,
+                  'author': element.val().author,
+                  'content': element.val().content,
                   'title': element.val().title,
                   'categorie': element.val().categorie,
                   'mainCategorie': element.val().mainCategorie,
                   'id': element.val().id,
                   'comments': element.val().comments,
-                  'tags': element.val().tags
+                  'tags': element.val().tags,
                 };
-                if(dbElements.title.length > 20){
+                if (dbElements.title.length > 20) {
                   dbElements.size = 'big';
                 }
-                console.log(dbElements);
-              f.push(dbElements);
-            })
+               f.push(dbElements);
+            });
              templates.getPage('home', f);
-        })
+        });
   }
-  
+  // function getByPage(){
 
-  function getByPage(){
+  // }
 
-  }
-
-let homeControl = {
+const homeControl = {
      all,
-     getByPage
-}
+    //  getByPage
+};
 
-export { homeControl as homeController }
- 
+export { homeControl as homeController };

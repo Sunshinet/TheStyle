@@ -132,6 +132,9 @@ a{
     /* padding: 0; */
     display: none
 }
+.search{
+    float: right;
+}
 
 /* SINGLE POST */
 .post-location,

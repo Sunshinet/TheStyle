@@ -1,13 +1,13 @@
 import { templates } from 'templates';
 const categoriesController = function(params) {
     // let main = params.mainCategorie;
-    let categorie = params.categorie;
+    const categorie = params.categorie;
      const dbRef = firebase.database().ref('posts');
         dbRef.once('value', (snap) => {
            const f = [];
               snap.forEach( (element) => {
                 if (element.val().categorie === categorie) {
-                   let dbElements = {
+                   const dbElements = {
                     'author': element.val().author,
                     'content': element.val().content,
                     'title': element.val().title,

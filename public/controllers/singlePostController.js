@@ -3,13 +3,12 @@ import 'jquery';
 const singlePostController = function(params) {
     const b = params.id;
     const dbRef = firebase.database().ref('posts');
-    
     dbRef.on('value', (snap) => {
         const f = [];
         // console.log(f)
-          snap.forEach(element => {
+          snap.forEach((element) => {
             if (element.val().id === b) {
-               let dbElements = {
+               const dbElements = {
                 'author': element.val().author,
                 'content': element.val().content,
                 'title': element.val().title,
@@ -26,7 +25,7 @@ const singlePostController = function(params) {
             const submitBtn = $('button').click(function() {
               const name = $('#authorName').val();
               const commentText = $('#text').val();
-              let newPost = {
+              const newPost = {
                 'name': name,
                 'commentText': commentText,
               };

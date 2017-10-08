@@ -3,11 +3,11 @@ import 'bootstrap';
 
 
   function all() {
-     let dbRef = firebase.database().ref('posts').orderByKey();
+     const dbRef = firebase.database().ref('posts').orderByKey();
         dbRef.once('value', (snap) => {
           const f =[];
-            snap.forEach(element => {
-                 let dbElements = {
+            snap.forEach((element) => {
+                 const dbElements = {
                   'author': element.val().author,
                   'content': element.val().content,
                   'title': element.val().title,
@@ -17,7 +17,7 @@ import 'bootstrap';
                   'comments': element.val().comments,
                   'tags': element.val().tags,
                 };
-                if (dbElements.title.length > 20) {
+                if (dbElements.title.length > 18) {
                   dbElements.size = 'big';
                 }
                f.push(dbElements);

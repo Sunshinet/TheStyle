@@ -11,10 +11,8 @@ SystemJS.config({
         "homeController": "../controllers/homeController.js",
         "categoriesController": "../controllers/categoriesController.js",
         "singlePostController ": "../controllers/singlePostController.js",
-      
         //Libraries\\
         "jquery": "../node-modules/jquery/dist/jquery.js",
-        
         //Routing:
         "navigo": "../node-modules/navigo/lib/navigo.min.js",
        

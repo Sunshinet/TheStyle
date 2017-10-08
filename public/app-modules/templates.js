@@ -1,11 +1,11 @@
 import 'jquery';
 
 const templates = (function () {
-    function getPage(pageName, data,a) {
+    function getPage(pageName, data) {
         const url = `templates/${pageName}.handlebars`;
         return $.get(url, function (html) {
             const hbTemplate = Handlebars.compile(html.toString());
-            $('#content').html(hbTemplate(data,a));
+            $('#content').html(hbTemplate(data));
         });
     }
 

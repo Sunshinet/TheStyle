@@ -36,7 +36,13 @@
     <meta property="og:title" content="Train hard every day!"/>
     <meta property="og:description" content="Check out our new workouts and became strong and healthy. We are waiting for you :)"/>
     <meta property="og:image" content="https://i.imgur.com/3kU1X0O.jpg"/> -->
-
+        <script>
+            function search(){
+                let a = $('.post-title').html();
+                // for(a in)
+                console.log(a);
+            }
+        </script>
     <title>THE STYLE</title>
 </head>
 
@@ -92,16 +98,59 @@
                 </ul>  
               </nav>
             <div class="search" >
-                <input type="text" name="searchInput" placeholder="Search this website..." ng-model="query" />
-                <button type="submit" class="search-submit"><img src="./img/magnifier.png" alt="Search" /></button>
+                <input type="text" name="searchInput" placeholder="Search this website..." />
+                <button type="submit" onclick="search()" class="search-submit">Search</button>
             </div>
 
             
         </header>
         <div id="content">
         </div>
-        <footer class="text-center navbar-fixed-bottom">
-        
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="#/">
+                        <h5 class="footer-titles">RECENT POSTS</h5>
+                    </a>
+                    <ul class="footer-links">
+                        <li >
+                            <a href="#">
+                                <span class="bullet">&raquo; &nbsp;</span> tttt
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <a>
+                        <h5 id="customText" class="footer-titles">CUSTOM TEXT</h5>
+                    </a>
+                    <p class="text-in-footer">Donec aliquam ligula maximus felis hendrerit dignissim. Fusce at finibus arcu, sit amet malesuada magna. Suspendisse potenti. Vivamus pretium tempor porta. Vivamus consequat efficitur pulvinar. Maecenas lacinia tortor at neque malesuada placerat. Donec non nulla cursus, blandit turpis vel, semper ex. Sed egestas finibus accumsan. Duis consectetur, ipsum at consequat vehicula, mi leo suscipit turpis, sed lobortis turpis urna eu sem. Praesent posuere rhoncus eleifend. Sed vitae consectetur est, nec molestie risus. </p>
+                </div>
+                <div class="footer-column">
+                    <a href="#">
+                        <h5 class="footer-titles">RECENT COMMENTS</h5>
+                    </a>
+                    <ul class="footer-links">
+                        <li ng-repeat="post in latestCommented">
+                            <a href="#/">
+                                <span class="bullet">&raquo; &nbsp;</span> tt
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column" id="last_footer">
+                    <a href="#">
+                        <h5 class="footer-titles">ARCHIVES</h5>
+                    </a>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#">
+                                <span class="bullet">&raquo; &nbsp;</span> tt
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </footer>
    
 

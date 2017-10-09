@@ -218,8 +218,15 @@ a{
     margin-right: 25px;
 }
 .post-image{
-    width: 222px;
-    position: relative;
+    border: 5px solid #efefef;
+    position: absolute;
+    height: 189px;
+}
+.post-image>img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .post-author{
     font-size: 20px;

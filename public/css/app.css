@@ -33,16 +33,7 @@ textarea {
     background-size: 100%;
     display: inline-block;
 } */
-.post-big{
-    width: 398px;
-    color: black;
-    background-color: white;
-    display: inline-block;
-    box-shadow: 3px 3px 3px black;
-    position: relative;
-    margin-bottom: 25px;
-    margin-right: 25px;
-}
+
 body {
     margin: 0;
     padding: 0;
@@ -183,9 +174,10 @@ a{
     border: none;
 }
 
-/* #main-content{
-    margin-top: 50px;
-} */
+#main-content{
+    margin-left: 86px;
+    margin-right: 58px;
+} 
 
 /* SINGLE POST */
 .post-location,
@@ -201,19 +193,29 @@ a{
     margin-left: 84px;
 
 }
-.index-page-content-container{
-    margin-left: 77px;
-}
+/* .index-page-content-container{
+    margin-left: 86px;
+} */
 .post {
     color: black;
     background-color: white;
     display: inline-block;
     box-shadow: 3px 3px 3px black;
     position: relative;
-    width: 185px;
+    width: 200px;
     margin-bottom: 25px;
     margin-right: 25px;
 
+}
+.post-big{
+    width: 425px;
+    color: black;
+    background-color: white;
+    display: inline-block;
+    box-shadow: 3px 3px 3px black;
+    position: relative;
+    margin-bottom: 25px;
+    margin-right: 25px;
 }
 .post-image{
     width: 222px;
@@ -278,7 +280,7 @@ a{
 
 
 .pagination-container {
-    width: 96%;
+    width: 97%;
     text-align: center;
     position: relative;
     font-size: 20px;

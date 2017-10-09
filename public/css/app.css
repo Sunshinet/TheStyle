@@ -276,9 +276,6 @@ a{
 /* PAGING */
 
 
-
-
-
 .pagination-container {
     width: 97%;
     text-align: center;
@@ -489,6 +486,76 @@ textarea{
     /* margin: 28px 0 10px; */
     font-size: 21px;
  }
+
+ /* ASIDE */
+
+ aside{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+ }
+ .aside-bar>ul{
+    /* font-size: 35px; */
+    background: #d6d6d6;
+ }
+ .aside-bar>ul>li{
+     display: inline-block;
+    
+     position: relative;
+ }
+ .title-toggle{
+     font-family: LigueGothic;
+     text-transform: uppercase;
+     color: #9a1d0d;
+     text-shadow: 1px 1px white; 
+     margin-top: 22px;
+     margin-left: 25px;
+     margin-right: 25px;
+     margin-bottom: 14px;
+     cursor: default;
+ }
+.submenu-toggle{
+    position: absolute;
+    background:#e7e7e7;
+    color:black;
+    display: none;
+   
+}
+.submenu-toggle>li{
+    border-top: 1px dotted #524848;
+}
+
+.first{
+    border-right: black dotted 1px;
+}
+.second{
+    border-right: black dotted 1px;
+}
+.first>.submenu-toggle{
+    background:#e7e7e7;
+    width: 364px;
+
+}
+.second>.submenu-toggle{
+    background:#e7e7e7;
+    position: absolute;
+    left: -115px;
+    width: 364px;
+}
+.third>.submenu-toggle{
+    background:#e7e7e7;
+    position: absolute;
+    right: 0px;
+    width: 364px;
+}
+.active{
+    background:#e7e7e7;
+   
+}
+.active>.submenu-toggle{
+    display: block;
+    
+}
 
 /* FOOTER */
 

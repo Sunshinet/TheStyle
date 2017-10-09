@@ -93,4 +93,68 @@
         </div>
     </article>
     {{/this}}
+     <aside>
+         <div class="aside-bar">
+             <ul class="togle-class-fn">
+                 <li class="first active">
+                    <h2 class="title-toggle"> recent</h2>
+                     <ul class="submenu-toggle">
+                         <li>
+                             <img>
+                             <h6>Zaglawie</h6>
+                             <p>blabla</p>
+                         </li>
+                         <li></li>
+                             <img>
+                             <h6>Zaglawie</h6>
+                             <p>blabla</p>
+                         </li>
+                         <li>
+                             <img>
+                             <h6>Zaglawie</h6>
+                             <p>blabla</p>
+                         </li>
+                     </ul>
+                 </li>
+                 <li  class="second">
+                     <h2 class="title-toggle">popular</h2>
+                     <ul class="submenu-toggle">
+                         <li>
+                             <img>
+                             <h6>Zaglawie</h6>
+                             <p>blabla</p>
+                         </li>
+                     </ul>
+                 </li>
+                 <li  class="third">
+                     <h2 class="title-toggle">random</h2>
+                     <ul class="submenu-toggle">
+                         <li>
+                             <img>
+                             <h6>Zaglawie</h6>
+                             <p>blabla</p>
+                         </li>
+                     </ul>
+                 </li>
+             </ul>
+             {{!-- <div class="m">
+                 <ul>
+                     <li>
+                         blabla
+                     </li>
+                 </ul>
+             </div> --}}
+         </div>
+     </aside>
 </main>
+<script>
+    $('.togle-class-fn').click(function(event){
+       if(!$(event.target).parent().hasClass('active')){
+           $(event.target).parent().addClass('active')
+       }
+
+       if($(event.target).parent().siblings().hasClass('active')) {
+           $(event.target).parent().siblings().removeClass('active');
+       }
+    })
+</script>

@@ -249,9 +249,10 @@ a{
 
 
 .pagination-container {
-    width: 99%;
-    margin: 0 auto 0 auto;
+    width: 96%;
     text-align: center;
+    position: relative;
+    font-size: 20px;
 }
 
 .pagination {
@@ -268,16 +269,20 @@ a{
     text-shadow: 2px 2px black;
 }
 
-.pagination_go_left a,
+/* .pagination_go_left a,
 .pagination_go_right a {
     padding: 0 9px;
-}
+} */
 
 .pagination a {
     font-family: LigueGothic;
+    margin-left: 4px;
+    padding-top: 11px;
 }
 
-.pagination_go_left a,
+.pagination_go_left a{
+    font-family: Arial;
+}
 .pagination_go_right a {
     font-family: Arial;
 }
@@ -297,10 +302,18 @@ a{
 
 .pagination_go_left {
     display: inline-block;
+    position: absolute;
+    left:0px;
+    font-size: 30px;
+
 }
 
 .pagination_go_right {
     display: inline-block;
+    position: absolute;
+    right: 0px;
+    font-size: 30px;
+    
 }
 
 /* SINGLE POST AND COMMENTS FULL */
@@ -461,7 +474,7 @@ footer{
 }
 .footer-titles{
     font-family: LigueGothic !important;
-    font-size: 20px;
+    font-size: 22px;
     text-transform: uppercase;
     color: white;
     display: inline-block;
@@ -470,6 +483,10 @@ footer{
  @media screen and (max-width: 768px){ 
     .post{
        background: green;
+       width: 280px;
+    }
+    .post-big{
+        width: 280px;
     }
  }
 

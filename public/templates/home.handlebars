@@ -1,6 +1,6 @@
 
 <div class="index-page-content-container">
-    <div class="post-location"><a  href="#/">Home</a></div>
+    <div class="post-location"></div>
     <div id="main-content">
       {{#each this}}
       {{#if this.size}}
@@ -78,13 +78,25 @@
         
     </div>
     <div class="pagination-container">
-        <p class="pagination_go_left"><a href="#">&laquo;</a></p>
-        <p class="pagination">
+        <span class="pagination_go_left"><a href="#">&laquo;</a></span>
+        <div class="pagination">
             <span>
                 <a href="#/" >1</a>
             </span>
-        </p>
-        <p class="pagination_go_right"><a href="#">&raquo;</a></p>
+             <span>
+                <a href="#/" >2</a>
+            </span>
+             <span>
+                <a href="#/" >3</a>
+            </span>
+             <span>
+                <a href="#/" >4</a>
+            </span>
+             <span>
+                <a href="#/" >5</a>
+            </span>
+        </div>
+        <span class="pagination_go_right"><a href="#">&raquo;</a></span>
     </div>
 </div>
 

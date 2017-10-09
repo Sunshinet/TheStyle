@@ -3,7 +3,7 @@ import 'bootstrap';
 
 
   function all() {
-     const dbRef = firebase.database().ref('posts').orderByKey();
+     const dbRef = firebase.database().ref('posts').limitToFirst(9);
         dbRef.once('value', (snap) => {
           const f =[];
             snap.forEach((element) => {

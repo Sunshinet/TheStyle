@@ -717,15 +717,26 @@ footer{
         width: 727px;
         margin-left: 20px;
     }
+    .left-comment{
+        display: inline-block;
+        width: 85%;
     }
  }
 
  @media screen and (max-width: 426px){
-    .post{
+    .post,
+    .post-big{
         background: yellow;
+        width: 350px;
     }
     .post-title{
-        font-size:50%;
+        font-size: 40px;
+    }
+    .post-author{
+        font-size: 25px;
+    }
+    #main-content{
+        margin-left: 55px;
     }
     .post-content{
        background: pink;

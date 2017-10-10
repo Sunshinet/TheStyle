@@ -981,6 +981,7 @@ footer{
    .post-content{
        width: 334px;
        margin-left: 18px;
+       margin-top: 54px;
    }
    .full-text{
        text-align: justify;
@@ -1137,6 +1138,7 @@ footer{
        width: 286px;
        font-size: 12px;
        margin-left: 18px;
+       margin-top: 54px;
    }
    .full-text{
        text-align: justify;

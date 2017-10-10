@@ -16,6 +16,7 @@ const singlePostController = function(params) {
                 'mainCategorie': element.val().mainCategorie,
                 'id': element.val().id,
                 'comments': element.val().comments,
+                'replay': element.val().replay,
                 'tags': element.val().tags,
               };
             f.push(dbElements);

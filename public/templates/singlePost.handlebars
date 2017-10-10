@@ -59,9 +59,7 @@
         
         <div class="post-comments">
             <div class="comments">
-              {{#if comments}}
-               <h1 class="post-title">{{comments.keys.length}}Comments</h1>
-              {{/if}}
+               <h1 class="post-title single-post-title">Comments</h1>
               <div class="comment">
                 {{#if comments}}
                 {{#each comments}}
@@ -73,13 +71,32 @@
                     <div class="comments-text">
                         {{commentText}}
                     </div>
+                    <div class="btn-replay-div">
+                        <button class="btn-replay">replay</button>
+                    </div>
                 </div>
+                    {{#if replay}}
+                    {{#each replay}}
+                    <div class="single-comment replay">
+                    <div class="comment-author">
+                            {{name}}
+                    </div>
+                        <div class="comments-text">
+                            {{commentText}}
+                        </div>
+                        <div class="btn-replay-div">
+                        <button class="btn-replay">replay</button>
+                    </div>
+                    </div>
+                    {{/each}}
+                    {{/if}}
                 {{/each}}
                 {{else}}
                 <div class="comment-author">No Comments</div>
                 {{/if}}
                 </div>
                 <div class="comments-content">
+                    <h1 class="post-title single-post-title-comment">Leave a comment</h1>
                     <form name="postCommentForm" class="comment-form" accept-charset="utf-8">
                         <input type="text"  id="authorName" placeholder="Your name" required="required">
                         <input type="url"   id="avatar" placeholder="Avatar URL" >

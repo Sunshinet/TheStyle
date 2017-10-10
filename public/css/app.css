@@ -834,7 +834,6 @@ footer{
      }
     .post,
     .post-big{
-        background: yellow;
         width: 350px;
     }
     .post-title{
@@ -847,8 +846,7 @@ footer{
         margin-left: 40px;
     }
     .post-content{
-        background: pink;
-        width: 372px;
+        width: 388px;
         margin-left: 18px;
     }
     .full-text{
@@ -875,6 +873,9 @@ footer{
         margin-top: 11px;
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .post-image{
+        height: 153px;
     }
     .tag-li{
         padding: 8px;
@@ -965,8 +966,8 @@ footer{
     }
    .post,
    .post-big{
-       background: #FF0062;
        width: 304px;
+       margin-top: 54px;
    }
    .post-title{
        font-size: 40px;
@@ -978,7 +979,6 @@ footer{
      margin-left: 32px;
    }
    .post-content{
-       background: pink;
        width: 334px;
        margin-left: 18px;
    }
@@ -1094,19 +1094,19 @@ footer{
     }
     .mainUl{
        
-        width: 300px;
+        width: 247px;;
         background: black;
         border-radius: 11px;
         text-align: center;
     }
     .submenu{
-        width: 300px;
+        width: 247px;
         position: relative;
         text-align: justify;
         padding-left: 100px;
     }
     .search{
-        right: 89px;
+        right: 58px;
         bottom: -43px;
     }
     header{
@@ -1117,15 +1117,15 @@ footer{
         display: none;
     }
     #logo{
-       width: 300px; 
+        width: 244px;
     }
    .post,
    .post-big{
-       background: #FF0062;
-       width: 304px;
+       width: 255px;
+       margin-top: 54px;
    }
    .post-title{
-       font-size: 40px;
+    font-size: 30px;
    }
    .post-author{
        font-size: 25px;
@@ -1134,8 +1134,8 @@ footer{
      margin-left: 32px;
    }
    .post-content{
-       background: pink;
-       width: 334px;
+       width: 286px;
+       font-size: 12px;
        margin-left: 18px;
    }
    .full-text{
@@ -1159,12 +1159,15 @@ footer{
        
    }
    .post-image-content.single-post{
-       height: 150px;
-       width: 150px;
+       height: 135px;
+       width: 140px;
        float: left;
        margin-top: 11px;
        margin-left: 10px;
        margin-right: 10px;
+   }
+   .single-post-category-and-date{
+       display: none;
    }
    .post-location{
        display: none;
@@ -1172,7 +1175,7 @@ footer{
    .post-image{
     border: 5px solid #efefef;
     position: absolute;
-    height: 152px;
+    height: 137px;
    }
    .post-image.cat{
     border: 5px solid #efefef;
@@ -1198,7 +1201,7 @@ footer{
    }
    .post-comments{
        margin-left: 18px;
-       width: 335px;
+       width: 284px;
    }
 
    .social-madeia>.post-aside-atributes{
@@ -1208,13 +1211,14 @@ footer{
        width: 77%;
    }
    .post-title.single-post-title{
-       font-size: 30px;
+    font-size: 33px;
+
    }
    .comment-form>input{
-    width: 283px;
+    width: 235px;
    }
    textarea{
-    width: 283px;
+    width: 235px;
    }
    .comment-image-content{
        vertical-align: top;
@@ -1235,6 +1239,9 @@ footer{
    }
    .share-phone>a{
     margin-left: 2px;
+   }
+   .footer-column{
+    margin-left: 45px;
    }
  }
  

@@ -4,7 +4,6 @@ import { homeController } from 'homeController';
 
 import { categoriesController } from 'categoriesController';
 import { singlePostController } from 'singlePostController ';
-import { tagsController } from 'tagsController';
 const router = new Navigo(null, false, '#!');
 
 router

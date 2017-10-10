@@ -11,7 +11,6 @@ SystemJS.config({
         'homeController': '../controllers/homeController.js',
         'categoriesController': '../controllers/categoriesController.js',
         'singlePostController ': '../controllers/singlePostController.js',
-        'tagsController': '../controllers/tagsController.js',
         // Libraries\\
         'jquery': '../node-modules/jquery/dist/jquery.js',
         // Routing:

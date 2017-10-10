@@ -490,7 +490,6 @@ textarea{
  }
  .comment:first-child{
      margin-top: 0px;
-     background: green;
  }
  .comments{
     margin-left: 25px;

@@ -35,7 +35,7 @@ const singlePostController = function(params) {
               .push().key;
               // console.log(newPostComment);
               const updates={};
-              updates['/posts/' + b + '/' + 'comments/'+ newPostComment] = newPost;
+              updates['/posts/' +b+'/'+'comments/'+ newPostComment] = newPost;
               return firebase.database().ref().update(updates);
             });
           });

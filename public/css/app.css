@@ -1088,6 +1088,27 @@ footer{
    }
  }
  @media screen and (max-width: 320px){
+    
+    .mainUl>li{
+        display: block;
+    }
+    .mainUl{
+       
+        width: 300px;
+        background: black;
+        border-radius: 11px;
+        text-align: center;
+    }
+    .submenu{
+        width: 300px;
+        position: relative;
+        text-align: justify;
+        padding-left: 100px;
+    }
+    .search{
+        right: 89px;
+        bottom: -43px;
+    }
     header{
         padding-top: 19px;
         padding-left: 36px;
@@ -1100,7 +1121,7 @@ footer{
     }
    .post,
    .post-big{
-       background: #AC6A84;
+       background: #FF0062;
        width: 304px;
    }
    .post-title{
@@ -1110,7 +1131,7 @@ footer{
        font-size: 25px;
    }
    #main-content{
-       margin-left: 40px;
+     margin-left: 32px;
    }
    .post-content{
        background: pink;
@@ -1145,11 +1166,19 @@ footer{
        margin-left: 10px;
        margin-right: 10px;
    }
+   .post-location{
+       display: none;
+   }
    .post-image{
     border: 5px solid #efefef;
     position: absolute;
     height: 152px;
    }
+   .post-image.cat{
+    border: 5px solid #efefef;
+    position: absolute;
+    height: 188px;
+}
    .post-image>img{
     height: 100%;
     width: 100%;
@@ -1159,9 +1188,6 @@ footer{
    }
    .tags{
        display: none;
-       /* width: 96px;
-       display: inline-block;
-       vertical-align: top; */
    }
    .related-post{
        display: none
@@ -1170,9 +1196,6 @@ footer{
        width: 190px;
        vertical-align: top;
    }
-   /* .post-aside-atributes{
-       margin: 0px;
-   } */
    .post-comments{
        margin-left: 18px;
        width: 335px;
@@ -1214,3 +1237,4 @@ footer{
     margin-left: 2px;
    }
  }
+ 

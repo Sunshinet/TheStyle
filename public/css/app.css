@@ -405,6 +405,10 @@ article{
     margin: 5px 0;
 
 }
+.single-post-category-and-date{
+    right: 6px;
+    top: 5px;
+}
 .share-phone{
     margin-top: 20px;
 }
@@ -506,12 +510,12 @@ textarea{
 .left-comment{
     display: inline-block;
     width: 90%;
+    vertical-align: top;
 }
  .comment-author{
     font-family: LigueGothic;
     text-transform: uppercase;
     font-size: 21px;
-    margin-top: 2%;
  }
  
  .comments-text{
@@ -784,6 +788,7 @@ footer{
     .left-comment{
         display: inline-block;
         width: 85%;
+        vertical-align: top;
     }
  }
 

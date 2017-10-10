@@ -581,12 +581,8 @@ textarea{
     margin-left: 15px;
     position: relative;
  }
- .aside-bar{
-     /* display: inline-block; */
-     /* position: absolute; */
- }
+ 
  .aside-bar>ul{
-    /* font-size: 35px; */
     background: #d6d6d6;
  }
  .aside-bar>ul>li{
@@ -654,10 +650,46 @@ textarea{
 .aside-links{
     display: inline-block;
     position: absolute;
-    top: 305px;
-    top: 455px;
+    top: 415px;
     background-color: #e7e7e7;
     box-shadow: 3px 3px 3px black;
+}
+.aside-links-list>li{
+    /* font-size: 12px;
+    color: darkgrey;
+    font-size: 12px;
+    line-height: 21px;
+    text-shadow: 1px 1px white;
+    line-height: 5px;
+    padding-left: 20px;
+    padding-right: 111px; */
+    /* margin:10px 15px; */
+}
+.aside-links-list>li>a{
+    font-size: 12px;
+    color: darkgrey;
+    line-height: 21px;
+    text-shadow: 1px 1px white;
+    padding-left: 20px;
+    padding-right: 111px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin:10px 15px;
+
+}
+.aside-text{
+    display: inline-block;
+    position: absolute;
+    top: 635px;
+    background-color: #e7e7e7;
+    box-shadow: 3px 3px 3px black;
+}
+.aside-text>p{
+    font-size: 12px;
+    color: darkgrey;
+    text-shadow: 1px 1px white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 img.comment-image-content{
     height: 38px;
@@ -694,11 +726,6 @@ footer{
     width: 253px;
     margin-left: 72px;
 }
-/* .footer-column>ul,
-.footer-column>a{
-    
-    margin-left: 72px;
-} */
 .footer-content{
     margin-top: 50px;
 
@@ -709,7 +736,6 @@ footer{
     text-transform: uppercase;
     color: white;
     color: #dcc08e;
-    /* display: inline-block; */
     text-shadow: 2px 2px black;
 }
 .footer-links>li>a{

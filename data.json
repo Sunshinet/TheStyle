@@ -87,7 +87,7 @@
             
             "id": "7",
             "mainCategorie":"beauty",
-            "title":"Eat as less as you can"
+            "title":"Don`t worry, be happy"
         },
         "8":{
             "author": "Tanya Dobrev",
@@ -201,6 +201,94 @@
             "content": "Nullam suscipit lorem diam, vitae pellentesque tortor dignissim in. Vestibulum feugiat consequat est, et eleifend nulla pharetra id. Morbi iaculis euismod commodo. Proin tempus, nulla et fringilla dapibus, sem elit tempor felis, vitae auctor elit nisi in lectus. Vivamus id dui sagittis, accumsan dui eget, blandit arcu. Suspendisse tempor, purus vitae iaculis molestie, tellus mi rhoncus enim, in pulvinar nisi nisl sed nisl. Curabitur volutpat arcu eu blandit suscipit. Quisque commodo magna sodales, finibus metus at, pellentesque enim. Donec venenatis, lectus id tempor vulputate, lorem neque suscipit lorem, facilisis consequat tortor purus in tortor. Phasellus non orci turpis. Pellentesque maximus nunc ut tortor tincidunt gravida. Duis elit dui, convallis non lorem ut, euismod pharetra risus. Proin sit amet efficitur arcu, ac egestas velit. Curabitur hendrerit aliquam mauris, vitae mattis purus eleifend a. Maecenas vestibulum, turpis vel suscipit sollicitudin, dui nisi suscipit libero, non laoreet velit quam ac nulla. Cras fermentum mi non pharetra volutpat.",
             "id": "20",
             "mainCategorie":"health",
+            "title":"Title goes here"
+        },
+        "21":{
+            "author": "Denislav Stoyanov",
+            "categorie":"mental health",
+            "content": "Nullam suscipit lorem diam, vitae pellentesque tortor dignissim in. Vestibulum feugiat consequat est, et eleifend nulla pharetra id. Morbi iaculis euismod commodo. Proin tempus, nulla et fringilla dapibus, sem elit tempor felis, vitae auctor elit nisi in lectus. Vivamus id dui sagittis, accumsan dui eget, blandit arcu. Suspendisse tempor, purus vitae iaculis molestie, tellus mi rhoncus enim, in pulvinar nisi nisl sed nisl. Curabitur volutpat arcu eu blandit suscipit. Quisque commodo magna sodales, finibus metus at, pellentesque enim. Donec venenatis, lectus id tempor vulputate, lorem neque suscipit lorem, facilisis consequat tortor purus in tortor. Phasellus non orci turpis. Pellentesque maximus nunc ut tortor tincidunt gravida. Duis elit dui, convallis non lorem ut, euismod pharetra risus. Proin sit amet efficitur arcu, ac egestas velit. Curabitur hendrerit aliquam mauris, vitae mattis purus eleifend a. Maecenas vestibulum, turpis vel suscipit sollicitudin, dui nisi suscipit libero, non laoreet velit quam ac nulla. Cras fermentum mi non pharetra volutpat.",
+            "id": "21",
+            "mainCategorie":"health",
+            "title":"Title goes here"
+        },
+        "22":{
+            "author": "Denislav Stoyanov",
+            "categorie":"diabetes",
+            "content": "Nullam suscipit lorem diam, vitae pellentesque tortor dignissim in. Vestibulum feugiat consequat est, et eleifend nulla pharetra id. Morbi iaculis euismod commodo. Proin tempus, nulla et fringilla dapibus, sem elit tempor felis, vitae auctor elit nisi in lectus. Vivamus id dui sagittis, accumsan dui eget, blandit arcu. Suspendisse tempor, purus vitae iaculis molestie, tellus mi rhoncus enim, in pulvinar nisi nisl sed nisl. Curabitur volutpat arcu eu blandit suscipit. Quisque commodo magna sodales, finibus metus at, pellentesque enim. Donec venenatis, lectus id tempor vulputate, lorem neque suscipit lorem, facilisis consequat tortor purus in tortor. Phasellus non orci turpis. Pellentesque maximus nunc ut tortor tincidunt gravida. Duis elit dui, convallis non lorem ut, euismod pharetra risus. Proin sit amet efficitur arcu, ac egestas velit. Curabitur hendrerit aliquam mauris, vitae mattis purus eleifend a. Maecenas vestibulum, turpis vel suscipit sollicitudin, dui nisi suscipit libero, non laoreet velit quam ac nulla. Cras fermentum mi non pharetra volutpat.",
+            "id": "22",
+            "mainCategorie":"health",
+            "title":"Title goes here"
+        },
+        "23":{
+            "author": "Denislav Stoyanov",
+            "categorie":"natural living",
+            "content": "Nullam suscipit lorem diam, vitae pellentesque tortor dignissim in. Vestibulum feugiat consequat est, et eleifend nulla pharetra id. Morbi iaculis euismod commodo. Proin tempus, nulla et fringilla dapibus, sem elit tempor felis, vitae auctor elit nisi in lectus. Vivamus id dui sagittis, accumsan dui eget, blandit arcu. Suspendisse tempor, purus vitae iaculis molestie, tellus mi rhoncus enim, in pulvinar nisi nisl sed nisl. Curabitur volutpat arcu eu blandit suscipit. Quisque commodo magna sodales, finibus metus at, pellentesque enim. Donec venenatis, lectus id tempor vulputate, lorem neque suscipit lorem, facilisis consequat tortor purus in tortor. Phasellus non orci turpis. Pellentesque maximus nunc ut tortor tincidunt gravida. Duis elit dui, convallis non lorem ut, euismod pharetra risus. Proin sit amet efficitur arcu, ac egestas velit. Curabitur hendrerit aliquam mauris, vitae mattis purus eleifend a. Maecenas vestibulum, turpis vel suscipit sollicitudin, dui nisi suscipit libero, non laoreet velit quam ac nulla. Cras fermentum mi non pharetra volutpat.",
+            "id": "23",
+            "mainCategorie":"health",
+            "title":"Title goes here"
+        },
+        "24":{
+            "author": "Denislav Stoyanov",
+            "categorie":"men`s health",
+            "content": "Nullam suscipit lorem diam, vitae pellentesque tortor dignissim in. Vestibulum feugiat consequat est, et eleifend nulla pharetra id. Morbi iaculis euismod commodo. Proin tempus, nulla et fringilla dapibus, sem elit tempor felis, vitae auctor elit nisi in lectus. Vivamus id dui sagittis, accumsan dui eget, blandit arcu. Suspendisse tempor, purus vitae iaculis molestie, tellus mi rhoncus enim, in pulvinar nisi nisl sed nisl. Curabitur volutpat arcu eu blandit suscipit. Quisque commodo magna sodales, finibus metus at, pellentesque enim. Donec venenatis, lectus id tempor vulputate, lorem neque suscipit lorem, facilisis consequat tortor purus in tortor. Phasellus non orci turpis. Pellentesque maximus nunc ut tortor tincidunt gravida. Duis elit dui, convallis non lorem ut, euismod pharetra risus. Proin sit amet efficitur arcu, ac egestas velit. Curabitur hendrerit aliquam mauris, vitae mattis purus eleifend a. Maecenas vestibulum, turpis vel suscipit sollicitudin, dui nisi suscipit libero, non laoreet velit quam ac nulla. Cras fermentum mi non pharetra volutpat.",
+            "id": "24",
+            "mainCategorie":"health",
+            "title":"Title goes here"
+        },
+        "25":{
+            "author": "Denislav Stoyanov",
+            "categorie":"woman`s health",
+            "content": "Nullam suscipit lorem diam, vitae pellentesque tortor dignissim in. Vestibulum feugiat consequat est, et eleifend nulla pharetra id. Morbi iaculis euismod commodo. Proin tempus, nulla et fringilla dapibus, sem elit tempor felis, vitae auctor elit nisi in lectus. Vivamus id dui sagittis, accumsan dui eget, blandit arcu. Suspendisse tempor, purus vitae iaculis molestie, tellus mi rhoncus enim, in pulvinar nisi nisl sed nisl. Curabitur volutpat arcu eu blandit suscipit. Quisque commodo magna sodales, finibus metus at, pellentesque enim. Donec venenatis, lectus id tempor vulputate, lorem neque suscipit lorem, facilisis consequat tortor purus in tortor. Phasellus non orci turpis. Pellentesque maximus nunc ut tortor tincidunt gravida. Duis elit dui, convallis non lorem ut, euismod pharetra risus. Proin sit amet efficitur arcu, ac egestas velit. Curabitur hendrerit aliquam mauris, vitae mattis purus eleifend a. Maecenas vestibulum, turpis vel suscipit sollicitudin, dui nisi suscipit libero, non laoreet velit quam ac nulla. Cras fermentum mi non pharetra volutpat.",
+            "id": "25",
+            "mainCategorie":"health",
+            "title":"Title goes here"
+        },
+        "27":{
+            "author": "Denislav Stoyanov",
+            "categorie":"how to",
+            "content": "Nullam suscipit lorem diam, vitae pellentesque tortor dignissim in. Vestibulum feugiat consequat est, et eleifend nulla pharetra id. Morbi iaculis euismod commodo. Proin tempus, nulla et fringilla dapibus, sem elit tempor felis, vitae auctor elit nisi in lectus. Vivamus id dui sagittis, accumsan dui eget, blandit arcu. Suspendisse tempor, purus vitae iaculis molestie, tellus mi rhoncus enim, in pulvinar nisi nisl sed nisl. Curabitur volutpat arcu eu blandit suscipit. Quisque commodo magna sodales, finibus metus at, pellentesque enim. Donec venenatis, lectus id tempor vulputate, lorem neque suscipit lorem, facilisis consequat tortor purus in tortor. Phasellus non orci turpis. Pellentesque maximus nunc ut tortor tincidunt gravida. Duis elit dui, convallis non lorem ut, euismod pharetra risus. Proin sit amet efficitur arcu, ac egestas velit. Curabitur hendrerit aliquam mauris, vitae mattis purus eleifend a. Maecenas vestibulum, turpis vel suscipit sollicitudin, dui nisi suscipit libero, non laoreet velit quam ac nulla. Cras fermentum mi non pharetra volutpat.",
+            "id": "27",
+            "mainCategorie":"features",
+            "title":"Title goes here"
+        },
+        "28":{
+            "author": "Denislav Stoyanov",
+            "categorie":"opinions",
+            "content": "Nullam suscipit lorem diam, vitae pellentesque tortor dignissim in. Vestibulum feugiat consequat est, et eleifend nulla pharetra id. Morbi iaculis euismod commodo. Proin tempus, nulla et fringilla dapibus, sem elit tempor felis, vitae auctor elit nisi in lectus. Vivamus id dui sagittis, accumsan dui eget, blandit arcu. Suspendisse tempor, purus vitae iaculis molestie, tellus mi rhoncus enim, in pulvinar nisi nisl sed nisl. Curabitur volutpat arcu eu blandit suscipit. Quisque commodo magna sodales, finibus metus at, pellentesque enim. Donec venenatis, lectus id tempor vulputate, lorem neque suscipit lorem, facilisis consequat tortor purus in tortor. Phasellus non orci turpis. Pellentesque maximus nunc ut tortor tincidunt gravida. Duis elit dui, convallis non lorem ut, euismod pharetra risus. Proin sit amet efficitur arcu, ac egestas velit. Curabitur hendrerit aliquam mauris, vitae mattis purus eleifend a. Maecenas vestibulum, turpis vel suscipit sollicitudin, dui nisi suscipit libero, non laoreet velit quam ac nulla. Cras fermentum mi non pharetra volutpat.",
+            "id": "28",
+            "mainCategorie":"features",
+            "title":"Title goes here"
+        },
+        "29":{
+            "author": "Denislav Stoyanov",
+            "categorie":"woman`s health",
+            "content": "Nullam suscipit lorem diam, vitae pellentesque tortor dignissim in. Vestibulum feugiat consequat est, et eleifend nulla pharetra id. Morbi iaculis euismod commodo. Proin tempus, nulla et fringilla dapibus, sem elit tempor felis, vitae auctor elit nisi in lectus. Vivamus id dui sagittis, accumsan dui eget, blandit arcu. Suspendisse tempor, purus vitae iaculis molestie, tellus mi rhoncus enim, in pulvinar nisi nisl sed nisl. Curabitur volutpat arcu eu blandit suscipit. Quisque commodo magna sodales, finibus metus at, pellentesque enim. Donec venenatis, lectus id tempor vulputate, lorem neque suscipit lorem, facilisis consequat tortor purus in tortor. Phasellus non orci turpis. Pellentesque maximus nunc ut tortor tincidunt gravida. Duis elit dui, convallis non lorem ut, euismod pharetra risus. Proin sit amet efficitur arcu, ac egestas velit. Curabitur hendrerit aliquam mauris, vitae mattis purus eleifend a. Maecenas vestibulum, turpis vel suscipit sollicitudin, dui nisi suscipit libero, non laoreet velit quam ac nulla. Cras fermentum mi non pharetra volutpat.",
+            "id": "29",
+            "mainCategorie":"health",
+            "title":"Title goes here"
+        },
+        "30":{
+            "author": "Denislav Stoyanov",
+            "categorie":"mobiles",
+            "content": "Nullam suscipit lorem diam, vitae pellentesque tortor dignissim in. Vestibulum feugiat consequat est, et eleifend nulla pharetra id. Morbi iaculis euismod commodo. Proin tempus, nulla et fringilla dapibus, sem elit tempor felis, vitae auctor elit nisi in lectus. Vivamus id dui sagittis, accumsan dui eget, blandit arcu. Suspendisse tempor, purus vitae iaculis molestie, tellus mi rhoncus enim, in pulvinar nisi nisl sed nisl. Curabitur volutpat arcu eu blandit suscipit. Quisque commodo magna sodales, finibus metus at, pellentesque enim. Donec venenatis, lectus id tempor vulputate, lorem neque suscipit lorem, facilisis consequat tortor purus in tortor. Phasellus non orci turpis. Pellentesque maximus nunc ut tortor tincidunt gravida. Duis elit dui, convallis non lorem ut, euismod pharetra risus. Proin sit amet efficitur arcu, ac egestas velit. Curabitur hendrerit aliquam mauris, vitae mattis purus eleifend a. Maecenas vestibulum, turpis vel suscipit sollicitudin, dui nisi suscipit libero, non laoreet velit quam ac nulla. Cras fermentum mi non pharetra volutpat.",
+            "id": "30",
+            "mainCategorie":"tech",
+            "title":"Title goes right over here"
+        },
+        "31":{
+            "author": "Denislav Stoyanov",
+            "categorie":"tablets",
+            "content": "Nullam suscipit lorem diam, vitae pellentesque tortor dignissim in. Vestibulum feugiat consequat est, et eleifend nulla pharetra id. Morbi iaculis euismod commodo. Proin tempus, nulla et fringilla dapibus, sem elit tempor felis, vitae auctor elit nisi in lectus. Vivamus id dui sagittis, accumsan dui eget, blandit arcu. Suspendisse tempor, purus vitae iaculis molestie, tellus mi rhoncus enim, in pulvinar nisi nisl sed nisl. Curabitur volutpat arcu eu blandit suscipit. Quisque commodo magna sodales, finibus metus at, pellentesque enim. Donec venenatis, lectus id tempor vulputate, lorem neque suscipit lorem, facilisis consequat tortor purus in tortor. Phasellus non orci turpis. Pellentesque maximus nunc ut tortor tincidunt gravida. Duis elit dui, convallis non lorem ut, euismod pharetra risus. Proin sit amet efficitur arcu, ac egestas velit. Curabitur hendrerit aliquam mauris, vitae mattis purus eleifend a. Maecenas vestibulum, turpis vel suscipit sollicitudin, dui nisi suscipit libero, non laoreet velit quam ac nulla. Cras fermentum mi non pharetra volutpat.",
+            "id": "31",
+            "mainCategorie":"tech",
+            "title":"Title goes here"
+        },
+        "32":{
+            "author": "Denislav Stoyanov",
+            "categorie":"apps",
+            "content": "Nullam suscipit lorem diam, vitae pellentesque tortor dignissim in. Vestibulum feugiat consequat est, et eleifend nulla pharetra id. Morbi iaculis euismod commodo. Proin tempus, nulla et fringilla dapibus, sem elit tempor felis, vitae auctor elit nisi in lectus. Vivamus id dui sagittis, accumsan dui eget, blandit arcu. Suspendisse tempor, purus vitae iaculis molestie, tellus mi rhoncus enim, in pulvinar nisi nisl sed nisl. Curabitur volutpat arcu eu blandit suscipit. Quisque commodo magna sodales, finibus metus at, pellentesque enim. Donec venenatis, lectus id tempor vulputate, lorem neque suscipit lorem, facilisis consequat tortor purus in tortor. Phasellus non orci turpis. Pellentesque maximus nunc ut tortor tincidunt gravida. Duis elit dui, convallis non lorem ut, euismod pharetra risus. Proin sit amet efficitur arcu, ac egestas velit. Curabitur hendrerit aliquam mauris, vitae mattis purus eleifend a. Maecenas vestibulum, turpis vel suscipit sollicitudin, dui nisi suscipit libero, non laoreet velit quam ac nulla. Cras fermentum mi non pharetra volutpat.",
+            "id": "32",
+            "mainCategorie":"tech",
             "title":"Title goes here"
         }
 

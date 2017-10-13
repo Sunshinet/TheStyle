@@ -1,10 +1,9 @@
 <main>
     {{#this}}
-    <div class="post-location"><a  href="#/">Home</a> &raquo; <a href="#/{{mainCategorie}}/{{categorie}}">{{categorie}}</a> &raquo; {{title}}</div>
+    <div class="post-location"><a  href="#/">Home</a><a href="#/{{mainCategorie}}/{{categorie}}">{{categorie}}</a> <span class="arrow location-arrow">&raquo;</span> <span class="opened-post">{{title}}</span></div>
     <article>
         <div class="post-content">
               <div class="post-full-content-left">
-              
                 <div class="post-image-content single-post">
                  <div class="post-image">
                  <img src="https://c1.staticflickr.com/4/3736/32762943674_2456ce495c_b.jpg">
@@ -13,7 +12,7 @@
                         <div class="post-category">
                         {{mainCategorie}}{{id}}
                         </div>
-                        <div class="post-date">
+                        <div class="post-date month">
                             JAN
                         </div>
                         <div class="post-date">
@@ -34,27 +33,27 @@
                 <div class="related-post-share-this related-post">
                 <h4 class="post-aside-atributes">RELATED POST</h4>
                 <ul class="aside-links-list ">
-                    <li ><a >&raquo;Vivamus id dui sagittis, accumsan dui eget </a></li>
-                    <li ><a >&raquo;Vivamus id dui sagittis, accumsan dui eget </a></li>
-                    <li ><a >&raquo;Vivamus id dui sagittis, accumsan dui eget </a></li>
+                    <li ><a ><span class="arrow"></span>&raquo;</span>Vivamus id dui sagittis </a></li>
+                    <li ><a ><span class="arrow"></span>&raquo;</span>Vivamus id dui sagittis</a></li>
+                    <li ><a ><span class="arrow"></span>&raquo;</span>Vivamus id dui sagittis </a></li>
                  </ul>
                     </div>
                     <div class="related-post-share-this">
                         <div class="social-madeia">
                             <h4 class="post-aside-atributes">SHARE THIS</h4>
                             <div class="share-phone">
-                                    <a href="#"><img src="../images/twetterLogo.png" alt="twetter"></a>
-                                    <a href="#"><img src="../images/facebookLogo.png" alt="facebook"></a>
-                                    <a href="#"><img src="../images/thirdLogo.png" alt="dontknow"></a>
-                                    <a href="#"><img src="../images/diggLogo.png" alt="digg"></a>
-                                    <a href="#"><img src="../images/fifthLogo.png" alt="what"></a>
+                                    <a href="#"><img src="../images/twetterLogo.jpg" alt="twetter"></a>
+                                    <a href="#"><img src="../images/facebookLogo.jpg" alt="facebook"></a>
+                                    <a href="#"><img src="../images/thirdLogo.jpg" alt="dontknow"></a>
+                                    <a href="#"><img src="../images/diggLogo.jpg" alt="digg"></a>
+                                    <a href="#"><img src="../images/fifthLogo.jpg" alt="what"></a>
                             </div>
                       </div>
                     </div>
             </div>
             <div class="post-full-content-right">
                     <h1 class="post-title single-post">{{title}}</h1>
-                    <h4 class="post-author">POSTED BY {{author}} IN {{categorie}} categorie</h4>
+                    <h4 class="post-author">POSTED BY {{author}} IN {{categorie}} category</h4>
                     <hr class="separator">
                     <p class="full-text">{{content}}</p>
             </div>
@@ -69,7 +68,9 @@
                 {{#each comments}}
                <div class="single-comment">
                     <hr class="separator">
+                   
                      <div class="comment-image-content">
+                     <img  class= "comment-avatar" href="{{avatar}}">
                      <div class="category-and-date">
                         <div class="comment-date">
                             JAN
@@ -77,6 +78,7 @@
                         <div class="comment-category">
                         24
                         </div>
+                        
                     </div>
                  </div>
                  <div class="left-comment">
@@ -129,8 +131,8 @@
                         <input type="text"  id="authorName" placeholder="Your name" required="required">
                         <input type="url"   id="avatar" placeholder="Avatar URL" >
                         <textarea id="text" rows="10" required="required"></textarea>
-                        <div class="reply-btn-container">
-                            <button class="submit" type="button">submit</button>
+                        <div class="btn-replay-div submit-div">
+                        <button class="btn-replay sbm" type="button">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -147,27 +149,27 @@
                         <li>
                               <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" class="comment-image-content">
                              <h6> Vivamus id dui sagittis, accumsan dui eget</h6>
-                             <p>blabla</p>
+                             <p>Posted by admin on Mar 13</p>
                          </li>
                          <li>
                               <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" class="comment-image-content">
                              <h6> Vivamus id dui sagittis, accumsan dui eget</h6>
-                             <p>blabla</p>
+                              <p>Posted by admin on Mar 13</p>
                          </li>
                          <li>
                               <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" class="comment-image-content">
                              <h6> Vivamus id dui sagittis, accumsan dui eget</h6>
-                             <p>blabla</p>
+                              <p>Posted by admin on Mar 13</p>
                          </li>
                          <li>
                               <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" class="comment-image-content">
                              <h6> Vivamus id dui sagittis, accumsan dui eget</h6>
-                             <p>blabla</p>
+                              <p>Posted by admin on Mar 13</p>
                          </li>
                           <li>
                               <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" class="comment-image-content">
                              <h6> Vivamus id dui sagittis, accumsan dui eget</h6>
-                             <p>blabla</p>
+                              <p>Posted by admin on Mar 13</p>
                          </li>
                      </ul>
                  </li>
@@ -175,29 +177,29 @@
                      <h2 class="title-toggle">popular</h2>
                      <ul class="submenu-toggle">
                         <li>
-                              <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" class="comment-image-content">
+                              <img src="http://picpulp.com/wp-content/uploads/2013/03/81.jpg?x11708" class="comment-image-content">
                              <h6> Vivamus id dui sagittis, accumsan dui eget</h6>
-                             <p>blabla</p>
+                              <p>Posted by admin on Mar 13</p>
                          </li>
                           <li>
-                              <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" class="comment-image-content">
+                              <img src="http://picpulp.com/wp-content/uploads/2013/03/81.jpg?x11708" class="comment-image-content">
                              <h6> Vivamus id dui sagittis, accumsan dui eget</h6>
-                             <p>blabla</p>
+                              <p>Posted by admin on Mar 13</p>
                          </li>
                           <li>
-                              <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" class="comment-image-content">
+                              <img src="http://picpulp.com/wp-content/uploads/2013/03/81.jpg?x11708" class="comment-image-content">
                              <h6> Vivamus id dui sagittis, accumsan dui eget</h6>
-                             <p>blabla</p>
+                              <p>Posted by admin on Mar 13</p>
                          </li>
                          <li>
-                              <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" class="comment-image-content">
+                              <img src="http://picpulp.com/wp-content/uploads/2013/03/81.jpg?x11708" class="comment-image-content">
                              <h6> Vivamus id dui sagittis, accumsan dui eget</h6>
-                             <p>blabla</p>
+                              <p>Posted by admin on Mar 13</p>
                          </li>
                           <li>
-                              <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" class="comment-image-content">
+                              <img src="http://picpulp.com/wp-content/uploads/2013/03/81.jpg?x11708" class="comment-image-content">
                              <h6> Vivamus id dui sagittis, accumsan dui eget</h6>
-                             <p>blabla</p>
+                              <p>Posted by admin on Mar 13</p>
                          </li>
                      </ul>
                  </li>
@@ -205,29 +207,29 @@
                      <h2 class="title-toggle">random</h2>
                      <ul class="submenu-toggle">
                          <li>
-                              <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" class="comment-image-content">
+                              <img src="https://www.edmonton.ca/attractions_events/documents/Images/BigPicturePrize2_DickTam.jpg" class="comment-image-content">
                              <h6> Vivamus id dui sagittis, accumsan dui eget</h6>
-                             <p>blabla</p>
+                              <p>Posted by admin on Mar 13</p>
                          </li>
                           <li>
-                              <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" class="comment-image-content">
+                              <img src="https://www.edmonton.ca/attractions_events/documents/Images/BigPicturePrize2_DickTam.jpg" class="comment-image-content">
                              <h6> Vivamus id dui sagittis, accumsan dui eget</h6>
-                             <p>blabla</p>
+                              <p>Posted by admin on Mar 13</p>
                          </li>
                           <li>
-                              <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" class="comment-image-content">
+                              <img src="https://www.edmonton.ca/attractions_events/documents/Images/BigPicturePrize2_DickTam.jpg" class="comment-image-content">
                              <h6> Vivamus id dui sagittis, accumsan dui eget</h6>
-                             <p>blabla</p>
+                              <p>Posted by admin on Mar 13</p>
                          </li>
                           <li>
-                              <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" class="comment-image-content">
+                              <img src="https://www.edmonton.ca/attractions_events/documents/Images/BigPicturePrize2_DickTam.jpg" class="comment-image-content">
                              <h6> Vivamus id dui sagittis, accumsan dui eget</h6>
-                             <p>blabla</p>
+                              <p>Posted by admin on Mar 13</p>
                          </li>
                           <li>
-                              <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" class="comment-image-content">
+                              <img src="https://www.edmonton.ca/attractions_events/documents/Images/BigPicturePrize2_DickTam.jpg" class="comment-image-content">
                              <h6> Vivamus id dui sagittis, accumsan dui eget</h6>
-                             <p>blabla</p>
+                              <p>Posted by admin on Mar 13</p>
                          </li>
                      </ul>
                  </li>
@@ -237,12 +239,12 @@
             <h2 class="title-toggle">CUSTOM TEXT WIDGET</h2>
             <hr class="separator">
             <ul class="aside-links-list ">
-                <li ><a >&raquo;Vivamus id dui sagittis, accumsan dui eget </a></li>
-                <li ><a >&raquo;Vivamus id dui sagittis, accumsan dui eget </a></li>
-                <li ><a >&raquo;Vivamus id dui sagittis, accumsan dui eget </a></li>
-                <li ><a >&raquo;Vivamus id dui sagittis, accumsan dui eget </a></li>
-                <li ><a >&raquo;Vivamus id dui sagittis, accumsan dui eget </a></li>
-                <li ><a >&raquo;Vivamus id dui sagittis, accumsan dui eget </a></li>
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sagittis, accumsan dui eget </a></li>
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sagittis, accumsan dui eget </a></li>
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sagittis, accumsan dui eget </a></li>
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sagittis, accumsan dui eget </a></li>
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sagittis, accumsan dui eget </a></li>
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sagittis, accumsan dui eget </a></li>
             </ul>
            
         </div>

@@ -18,25 +18,31 @@ const singlePostController = function(params) {
                 'comments': element.val().comments,
                 'replay': element.val().replay,
                 'tags': element.val().tags,
+                'avatar': element.val().avatar,
               };
             f.push(dbElements);
         }
           });
           templates.getPage('singlePost', f).then(()=>{
-            const submitBtn = $('button').click(function() {
+          
+             $('button').click(function() {
               const name = $('#authorName').val();
+              const avatar = $('#avatar').val();
               const commentText = $('#text').val();
               const newPost = {
                 'name': name,
+                'avatar': avatar,
                 'commentText': commentText,
               };
+            
               const newPostComment = firebase.database().ref('posts')
               .child(b + '/comments')
               .push().key;
               // console.log(newPostComment);
               const updates={};
-              updates['/posts/' +b+'/'+'comments/'+ newPostComment] = newPost;
+              updates['/posts/' + b + '/' + 'comments/'+ newPostComment] = newPost;
               return firebase.database().ref().update(updates);
+          
             });
           });
       });

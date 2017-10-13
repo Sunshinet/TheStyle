@@ -1,12 +1,13 @@
 <div class="index-page-content-container">
       
       {{!-- <div class="post-location">{{this.1.categorie}}</div> --}}
-    <div class="post-location"><a  href="#/">Home</a> &raquo; <a href="#/{{this.0.mainCategorie}}/{{this.0.categorie}}">{{this.0.categorie}}</a></div>
+    <div class="post-location"><a  href="#/">Home</a><span class="arrow location-arrow">&raquo;</span> <a href="#/{{this.0.mainCategorie}}/{{this.0.categorie}}"><span class="opened-post">{{this.0.categorie}}</span></a></div>
     <div id="main-content">
+        <article class="categories-article">
        {{#each this}}
       {{#if this.size}}
       <div class="post-big">
-           <div class="post-image cat">
+           <div class="post-image">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Darvasa_gas_crater_panorama_crop.jpg">
             </div>
             <div class="post-image-content">
@@ -41,7 +42,7 @@
         
         {{else}}
          <div class="post">
-           <div class="post-image cat">
+           <div class="post-image">
                 <img src="https://i.pinimg.com/736x/e7/1d/71/e71d7116257ceef4d738f0bc88e377a3--minions-love-minions-despicable-me.jpg">
             </div>
             <div class="post-image-content">
@@ -76,6 +77,35 @@
         {{/if}}
         
         {{/each}}
+    </article>
+     <aside class="categories-aside">
+         <div class="recent-cpmments">
+            <h2 class="title-toggle">recent comments</h2>
+            <hr class="separator">
+            <ul class="aside-links-list ">
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sagit </a></li>
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sagitti </a></li>
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sagittis, acc </a></li>
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sa </a></li>
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sagitti </a></li>
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sagit </a></li>
+            </ul>
+           
+        </div>
+         <div class="recent-cpmments">
+            <h2 class="title-toggle">recent comments</h2>
+            <hr class="separator">
+            <ul class="aside-links-list ">
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sagit </a></li>
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sagitti </a></li>
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sagittis, acc </a></li>
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sa </a></li>
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sagitti </a></li>
+                <li ><a ><span class="arrow">&raquo;</span>Vivamus id dui sagit </a></li>
+            </ul>
+           
+        </div>
+     </aside>
       <div class="pagination-container">
         <p class="pagination_go_left"><a href="#">&laquo;</a></p>
         <p class="pagination">

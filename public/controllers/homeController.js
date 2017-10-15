@@ -22,8 +22,8 @@ import { searchController } from 'searchController';
                 }
                f.push(dbElements);
             });
-             templates.getPage('home', f).then(()=>{
-              searchController();
+             templates.getPage('home', f).then(() => {
+               searchController();
              });
         });
   }

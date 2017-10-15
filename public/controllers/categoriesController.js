@@ -1,7 +1,9 @@
 import { templates } from 'templates';
+import { searchController } from 'searchController';
 const categoriesController = function(params) {
     // let main = params.mainCategorie;
     const categorie = params.categorie;
+    console.log(typeof categorie);
      const dbRef = firebase.database().ref('posts');
         dbRef.once('value', (snap) => {
            const f = [];
@@ -21,7 +23,9 @@ const categoriesController = function(params) {
                 f.push(dbElements);
             }
               });
-              templates.getPage('categories', f);
+              templates.getPage('categories', f).then(()=>{
+                searchController();
+              });
           });
 };
 

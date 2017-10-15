@@ -1,5 +1,6 @@
 import { templates } from 'templates';
 import 'jquery';
+import { searchController } from 'searchController';
 const singlePostController = function(params) {
     const b = params.id;
     const dbRef = firebase.database().ref('posts');
@@ -24,8 +25,8 @@ const singlePostController = function(params) {
         }
           });
           templates.getPage('singlePost', f).then(()=>{
-          
-             $('button').click(function() {
+          // searchController();
+             $('.sbm').click(function() {
               const name = $('#authorName').val();
               const avatar = $('#avatar').val();
               const commentText = $('#text').val();

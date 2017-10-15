@@ -1,6 +1,6 @@
 import { templates } from 'templates';
 import 'bootstrap';
-
+import { searchController } from 'searchController';
 
   function all() {
      const dbRef = firebase.database().ref('posts').limitToFirst(9);
@@ -22,16 +22,13 @@ import 'bootstrap';
                 }
                f.push(dbElements);
             });
-             templates.getPage('home', f);
+             templates.getPage('home', f).then(()=>{
+              searchController();
+             });
         });
   }
-  // function getByPage(){
-
-  // }
-
 const homeControl = {
      all,
-    //  getByPage
 };
 
 export { homeControl as homeController };

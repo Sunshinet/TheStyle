@@ -5,6 +5,7 @@ import { homeController } from 'homeController';
 import { categoriesController } from 'categoriesController';
 import { singlePostController } from 'singlePostController ';
 import { searchController } from 'searchController';
+import { tagsController } from 'tagsController';
 const router = new Navigo(null, false, '#!');
 
 router
@@ -12,6 +13,7 @@ router
     .on({
         '/#/': () => homeController.all(),
         '/search': () => searchController(),
+        '/tags/:tag': (params) => tagsController(params),
         '/beauty/:categorie': (params) => categoriesController(params),
         '/beauty/:categorie/:id': (params) => singlePostController(params),
         '/health/:categorie': (params) => categoriesController(params),

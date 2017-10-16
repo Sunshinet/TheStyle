@@ -20,7 +20,6 @@ router
         '/features/:categorie/:id': (params) => singlePostController(params),
         '/tech/:categorie': (params) => categoriesController(params),
         '/tech/:mainCategorie/:id': (params) => singlePostController(params),
-        '/search': () => searchController(),
     })
     .notFound(() => templates.getPage('notFound', {}))
     .resolve();

@@ -92,8 +92,17 @@
                         {{commentText}}
                     </div>
                     <div class="btn-replay-div">
-                        <button class="btn-replay">replay</button>
+                        <button class="btn-replay rpl" value="{{key}}">replay</button>
+                      <form name="postCommentForm" class="comment-form replay-form" accept-charset="utf-8">
+                           <input type="text"  id="authorName replay" placeholder="Your name" required="required">
+                           <input type="url"   id="avatar replay" placeholder="Avatar URL" >
+                           <textarea id="text reply" rows="10" required="required"></textarea>
+                         <div class="btn-replay-div submit-div">
+                          <button class="btn-replay sbm replay" type="button">Submit</button>
+                         </div>
+                       </form>
                     </div>
+                     
                     </div>
                 </div>
                     {{#if replay}}
@@ -116,8 +125,8 @@
                         <div class="comments-text">
                             {{commentText}}
                         </div>
-                        <div class="btn-replay-div">
-                        <button class="btn-replay">replay</button>
+                     <div class="btn-replay-div">
+                        {{!-- <button class="btn-replay rpl">replay</button> --}}
                     </div>
                     </div>
                     </div>

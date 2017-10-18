@@ -1,6 +1,8 @@
+/* globals toastr */
 import { templates } from 'templates';
 import 'jquery';
-import { searchController } from 'searchController';
+// import { searchController } from 'searchController';
+// import { toastr } from 'toastr';
 const singlePostController = function(params) {
     const b = params.id;
     const dbRef = firebase.database().ref('posts');
@@ -26,25 +28,40 @@ const singlePostController = function(params) {
           });
           templates.getPage('singlePost', f).then(()=>{
           // searchController();
+          
              $('.sbm').click(function() {
+              
               const name = $('#authorName').val();
               const avatar = $('#avatar').val();
               const commentText = $('#text').val();
-              const newPost = {
-                'name': name,
-                'avatar': avatar,
-                'commentText': commentText,
-              };
-            
+              toastr.success(`You did it ${ name }!`);
+
               const newPostComment = firebase.database().ref('posts')
               .child(b + '/comments')
               .push().key;
-              // console.log(newPostComment);
+               const newPost = {
+                'name': name,
+                'avatar': avatar,
+                'commentText': commentText,
+                'key': newPostComment,
+
+              };
+
               const updates={};
-              updates['/posts/' + b + '/' + 'comments/'+ newPostComment] = newPost;
-              return firebase.database().ref().update(updates);
-          
-            });
+              updates['/posts/' + b +'/'+'comments/'+ newPostComment] = newPost;
+
+              return firebase.database().ref().update(updates)
+  
+              
+            })
+            
+          }).then(()=>{
+            $('.rpl').click(function(ev) {
+              // let t = ev.target;
+             let commentId = $(ev.target).next().toggleClass('notHidden');
+             let p = $(ev.target).val();
+             
+             });
           });
       });
 };

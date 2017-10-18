@@ -534,7 +534,12 @@ textarea{
     margin-left: 25px;
     margin-right: 25px;
  }
-
+.replay-form{
+    display: none;
+}
+.notHidden{
+    display: block;
+}
  .btn-replay-div{
     position: relative;
     padding-top: 10px;

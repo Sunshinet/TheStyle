@@ -92,13 +92,15 @@
                         {{commentText}}
                     </div>
                     <div class="btn-replay-div">
-                        <button class="btn-replay rpl" value="{{key}}">replay</button>
+                        <button class="btn-replay rpl">replay</button>
+                       
                       <form name="postCommentForm" class="comment-form replay-form" accept-charset="utf-8">
-                           <input type="text"  id="authorName replay" placeholder="Your name" required="required">
-                           <input type="url"   id="avatar replay" placeholder="Avatar URL" >
-                           <textarea id="text reply" rows="10" required="required"></textarea>
+                           <h1 class="post-title single-post-title-comment">your replay</h1>
+                           <input type="text"  id="authorName-replay" placeholder="Your name" required="required">
+                           <input type="url"   id="avatar-replay" placeholder="Avatar URL" >
+                           <textarea id="text-replay" rows="10" required="required"></textarea>
                          <div class="btn-replay-div submit-div">
-                          <button class="btn-replay sbm replay" type="button">Submit</button>
+                          <button class="btn-replay sbm-replay" type="button" value="{{key}}">Submit</button>
                          </div>
                        </form>
                     </div>
@@ -109,6 +111,9 @@
                     {{#each replay}}
                     <div class="single-comment replay">
                         <div class="comment-image-content">
+                             {{#if avatarReplay}}
+                            <img  class= "comment-avatar" src="{{avatarReplay}}">
+                             {{/if}}
                      <div class="category-and-date">
                         <div class="comment-date">
                             JAN
@@ -120,10 +125,10 @@
                     </div>
                     <div class="left-comment">
                     <div class="comment-author">
-                            {{name}}
+                            {{nameReplay}}
                     </div>
                         <div class="comments-text">
-                            {{commentText}}
+                            {{commentTextReplay}}
                         </div>
                      <div class="btn-replay-div">
                         {{!-- <button class="btn-replay rpl">replay</button> --}}
@@ -141,10 +146,10 @@
                     <h1 class="post-title single-post-title-comment">Leave a comment</h1>
                     <form name="postCommentForm" class="comment-form" accept-charset="utf-8">
                         <input type="text"  id="authorName" placeholder="Your name" required="required">
-                        <input type="url"   id="avatar" placeholder="Avatar URL" >
+                        <input type="url"   id="avatar" placeholder="Avatar URL (optional)" >
                         <textarea id="text" rows="10" required="required"></textarea>
                         <div class="btn-replay-div submit-div">
-                        <button class="btn-replay sbm" type="button">Submit</button>
+                        <button class="btn-replay sbm " type="button">Submit</button>
                         </div>
                     </form>
                 </div>

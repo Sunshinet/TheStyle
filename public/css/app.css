@@ -536,8 +536,12 @@ textarea{
  }
 .replay-form{
     display: none;
+    padding-top: 20px;
 }
 .notHidden{
+    display: block;
+}
+#authorName-replay {
     display: block;
 }
  .btn-replay-div{

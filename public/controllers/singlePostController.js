@@ -30,7 +30,6 @@ const singlePostController = function(params) {
           // searchController();
           
              $('.sbm').click(function() {
-              
               const name = $('#authorName').val();
               const avatar = $('#avatar').val();
               const commentText = $('#text').val();
@@ -51,16 +50,34 @@ const singlePostController = function(params) {
               updates['/posts/' + b +'/'+'comments/'+ newPostComment] = newPost;
 
               return firebase.database().ref().update(updates)
-  
-              
             })
-            
           }).then(()=>{
             $('.rpl').click(function(ev) {
               // let t = ev.target;
              let commentId = $(ev.target).next().toggleClass('notHidden');
              let p = $(ev.target).val();
              
+             });
+
+             $(".btn-replay.sbm-replay").click(function(ev) {
+              const nameReplay = $('#authorName-replay').val();
+              const avatarReplay = $('#avatar-replay').val();
+              const commentTextReplay = $('#text-replay').val();
+              const newPostReplay = firebase.database().ref('posts')
+              .child(b + '/comments' + $(ev.target).val() + 'replay/')
+              .push().key;
+              
+              const newReplay = {
+                'nameReplay': nameReplay,
+                'avatarReplay': avatarReplay,
+                'commentTextReplay': commentTextReplay,
+
+              };
+
+              const updates={};
+              updates['/posts/' + b +'/'+'comments/' + $(ev.target).val()+'/replay/' + newPostReplay] = newReplay;
+
+              return firebase.database().ref().update(updates);
              });
           });
       });

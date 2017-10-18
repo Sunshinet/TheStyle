@@ -27,57 +27,63 @@ const singlePostController = function(params) {
         }
           });
           templates.getPage('singlePost', f).then(()=>{
-          // searchController();
-          
              $('.sbm').click(function() {
               const name = $('#authorName').val();
               const avatar = $('#avatar').val();
               const commentText = $('#text').val();
-              toastr.success(`You did it ${ name }!`);
+              
 
               const newPostComment = firebase.database().ref('posts')
               .child(b + '/comments')
               .push().key;
-               const newPost = {
+              const newPost = {
                 'name': name,
                 'avatar': avatar,
                 'commentText': commentText,
                 'key': newPostComment,
-
               };
-
               const updates={};
               updates['/posts/' + b +'/'+'comments/'+ newPostComment] = newPost;
-
-              return firebase.database().ref().update(updates)
-            })
-          }).then(()=>{
+              if (name !== '' && commentText !== '') {
+                toastr.success('Done!');
+              return firebase.database().ref().update(updates);
+              } else {
+                toastr.error('name and content are required!');
+              }
+            });
+          
             $('.rpl').click(function(ev) {
               // let t = ev.target;
              let commentId = $(ev.target).next().toggleClass('notHidden');
-             let p = $(ev.target).val();
              
              });
 
-             $(".btn-replay.sbm-replay").click(function(ev) {
-              const nameReplay = $('#authorName-replay').val();
-              const avatarReplay = $('#avatar-replay').val();
-              const commentTextReplay = $('#text-replay').val();
+             $('.sbm-replay').click(function(ev) {
+               let a =  $(ev.target).parent().parent().find(">:first-child").next();
+               const nameReplays = $(ev.target).parent().parent().find(">:first-child").next().val();
+              console.log(nameReplays);
+              const avatarReplays = $(ev.target).parent().parent().find(">:first-child").next().next().val();
+              console.log(avatarReplays);
+              const commentTextReplays = $(ev.target).parent().parent().find(">:first-child").next().next().next().val();
+              console.log(commentTextReplays);
               const newPostReplay = firebase.database().ref('posts')
               .child(b + '/comments' + $(ev.target).val() + 'replay/')
               .push().key;
-              
               const newReplay = {
-                'nameReplay': nameReplay,
-                'avatarReplay': avatarReplay,
-                'commentTextReplay': commentTextReplay,
-
+                'nameReplay': nameReplays,
+                'avatarReplay': avatarReplays,
+                'commentTextReplay': commentTextReplays,
               };
 
               const updates={};
               updates['/posts/' + b +'/'+'comments/' + $(ev.target).val()+'/replay/' + newPostReplay] = newReplay;
 
-              return firebase.database().ref().update(updates);
+              if (nameReplays !== '' && commentTextReplays !== '') {
+                toastr.success('Done!');
+                 return firebase.database().ref().update(updates);
+              } else {
+                toastr.error('name and content are required!');
+              }
              });
           });
       });
